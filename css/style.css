@@ -1,17 +1,25 @@
 /* -------------------------------------- *
 General Styles
 * --------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&display=swap');
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
-
+Header {
+  background-image: url("../images/Banners/Header-img.jpg");
+  background-size: cover;
+  height: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 h1,
 h2,
 h3 {
+  font-family: 'Patua One', cursive;
   font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  
 }
 main,
 header h1,
