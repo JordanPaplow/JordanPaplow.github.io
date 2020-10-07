@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+main{
+    background-color: powderblue;
+    height: 100vh;
+}
+header{
+    width: 70vw;
+    margin: auto;
+    padding-top: 60px;
+}

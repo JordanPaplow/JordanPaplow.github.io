@@ -2,11 +2,16 @@
 General Styles
 * --------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&display=swap');
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
+
 Header {
   background-image: url("../images/Banners/Header-img.jpg");
   background-size: cover;
@@ -14,11 +19,17 @@ Header {
   background-position: center center;
   background-repeat: no-repeat;
 }
-h1,
+h1{
+font-family: 'Patua One', cursive;
+font-size: 36px;
+Color: white
+}
+
 h2,
 h3 {
   font-family: 'Patua One', cursive;
   font-size: 36px;
+  color:rgb(102, 51, 0)
   
 }
 main,
@@ -43,4 +54,23 @@ nav {
 
 .inspiro-img {
   width: 600px;
+}
+.two-col{
+  display:flex;
+  flex-wrap: wrap;
+}
+.two-col section{
+  flex: 50%;
+  padding:20px;
+}
+.three-col {
+  display: flex
+}
+.three-col article {
+  flex: 1;
+  padding: 10px;
+}
+.three-col .description {
+  flex-grow: 2;
+
 }
