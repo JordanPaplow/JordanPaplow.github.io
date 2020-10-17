@@ -2,41 +2,81 @@
 Something FISHY about this website.
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Vollkorn:wght@600&display=swap');
 
 body {
-    margin: 0;
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  .logo {
-    border-radius: 50%;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    width: 70%;
-    padding: 0;
-  }
-  nav li a:hover {
-    padding-bottom: 8px;
-    border-bottom: 4px solid red;
-  }
-  
-  .grid-2 {
-    display: flex;
-  }
-  
-  .grid-2 div {
-    flex: 1;
-    padding: 60px;
-  }
-  .grid-2 .left-col {
-    text-align: right;
-  }
+font-family: 'Noto Sans JP', helvetica, sans-serif;
+line-height:1.6em;
+margin: 0;
 
-  
+}
+
+
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+
+}
+
+nav {
+
+background-color: #3C4F3E;
+Height: 80px;
+font-family: 'Vollkorn', serif;
+font-size: 20px;
+padding-top: 15px;
+
+
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  min-width: 50px;
+  width: 70%;
+}
+
+nav li a:hover {
+  padding-bottom: 8px;
+  border-bottom: 4px solid red;
+}
+
+#banner {
+
+  background-image:url(../images/Columbia\ Gorge.jpg);
+  background-size: cover;
+  height: 250px;
+  background-position: 0 20%;
+  background-repeat: no-repeat;
+
+}
+
+#intro {
+  width: 60%;
+  margin:auto;
+  padding:30px;
+}
+
+.grid-2 {
+  display: flex;
+}
+
+.grid-2 div {
+  flex: 1;
+  padding: 60px;
+}
+
+.grid-2 .left-col {
+  text-align: right;
+}

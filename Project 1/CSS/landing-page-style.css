@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Vollkorn:wght@600&display=swap');
+
+body{
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#background-video {
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+img{
+position:absolute;
+top: 40%;
+left: 50%;
+height:75px;
+
+
+}
+
+
+.button{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    background-color: white;
+   
+    width: 6em;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Vollkorn', serif;
+    font-size: 15px;
+
+}
