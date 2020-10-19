@@ -2,6 +2,7 @@
 
 body{
     margin:0;
+    
 }
 
 a{
@@ -30,11 +31,21 @@ height:75px;
     left: 50%;
     color: black;
     background-color: white;
-   
     width: 6em;
     text-align: center;
     border-radius: 10px;
     font-family: 'Vollkorn', serif;
     font-size: 15px;
 
+
+}
+.button a{
+line-height: 2;
+}
+.center {
+    opacity: .5;
+}
+
+.center:hover {
+    opacity: 1;
 }
