@@ -6,14 +6,12 @@ Something FISHY about this website.
 
 body {
 font-family: 'Noto Sans JP', helvetica, sans-serif;
-line-height:1.6em;
+line-height:1.8em;
 margin: 0;
 
 }
 
-
-
-a{
+a {
   color:white;
   text-decoration: none;
 }
@@ -25,7 +23,6 @@ img {
 .logo {
   height: 30px;
   width: auto;
-
 }
 
 nav {
@@ -35,8 +32,6 @@ Height: 80px;
 font-family: 'Vollkorn', serif;
 font-size: 20px;
 padding-top: 15px;
-
-
 }
 
 nav ul {
@@ -48,8 +43,8 @@ nav ul {
 }
 
 nav li a:hover {
-  padding-bottom: 8px;
-  border-bottom: 4px solid red;
+  padding-bottom: 3px;
+  border-bottom: 4px solid rgb(84, 116, 97);
 }
 
 #banner {
@@ -61,38 +56,99 @@ nav li a:hover {
   background-repeat: no-repeat;
 
 }
+  #banner-sockeye {
+    background-image:url(../images/banner-sockeye.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: 0 70%;
+    background-repeat: no-repeat;
+  }
+  #banner-chinook {
+    background-image:url(../images/banner-chinook\ copy.jpg);
+    background-size: cover;
+    height: 25vh;
+    background-position: 0 70%;
+    background-repeat: no-repeat;
+  }
+  #banner-coho {
+    background-image:url(../images/banner-coho.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+  }
+  #banner-pink {
+    background-image:url(../images/banner-pink.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+  }
+  #banner-steelhead {
+    background-image:url(../images/banner-steelhead.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+  }
+  #banner-chum {
+    background-image:url(../images/banner-chum.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: 0 45%;
+    background-repeat: no-repeat;
+  }
 
 #intro {
   width: 60%;
   margin:auto;
-  padding:30px;
+  padding:60px;
 }
 
 .grid-2 {
   display: flex;
+  margin:auto;
+  width:70%;
 }
 
 .grid-2 div {
-  flex: 1;
-  padding: 60px;
+  padding-top: 60px;
 }
 
 .grid-2 .left-col {
+  flex:.25;
+  padding-right: 20px;
   text-align: right;
 }
 
-h1{
+.grid-2 .right-col {
+  flex:.75;
+  padding-left: 20px;
+  padding-top: 80px;
+}
+
+h1 {
   font-family: 'Vollkorn', serif;
   font-size: 50px;
+  margin-bottom: 0;
 
 }
 
-h2{
+#intro-header{
+  padding-bottom: 15px;
+}
+
+h2 {
 font-style: italic;
 font-size: 15px;
 }
 
-#fish-v1{
+#fish-v1 {
   Width: 350px;
-  height: auto;
+  padding-top: 30px;
+}
+
+#fish-v2 {
+  Width: 200px;
+  padding-top: 30px;
 }
