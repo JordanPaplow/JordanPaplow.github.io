@@ -9,12 +9,12 @@ a{
     text-decoration: none;
 }
 
-@media (min-aspect-ratio:16/9) {
-    #background-video {
-        height:auto;
-        width:100%;     
-    }
+
+#background-video {
+    height:auto;
+    width:100%;     
 }
+
 
 img{
     height:25vh;

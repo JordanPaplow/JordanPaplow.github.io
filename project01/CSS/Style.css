@@ -43,8 +43,9 @@ nav ul {
 }
 
 nav li a:hover {
-  padding-bottom: 3px;
+  padding-bottom: 1px;
   border-bottom: 4px solid rgb(84, 116, 97);
+  transition-duration: 1s;
 }
 
 #banner {
