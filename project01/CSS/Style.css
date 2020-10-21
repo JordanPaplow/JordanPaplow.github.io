@@ -67,7 +67,7 @@ nav li a:hover {
   #banner-chinook {
     background-image:url(../images/banner-chinook\ copy.jpg);
     background-size: cover;
-    height: 25vh;
+    height: 250px;
     background-position: 0 70%;
     background-repeat: no-repeat;
   }
