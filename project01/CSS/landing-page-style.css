@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Vollkorn:wght@600&display=swap');
 
 body{
-    margin:0;
-    
+    margin:0;  
 }
 
-a{
+a {
     text-decoration: none;
 }
-
 
 #background-video {
     height:auto;
     width:100%;     
 }
-
 
 img{
     height:25vh;
@@ -24,7 +21,6 @@ img{
     top: 0;
     right: 0;
     bottom: 0;
-
     display: block;
     margin: auto; 
 }
@@ -39,5 +35,4 @@ img{
     
     opacity: 1;
     transition-duration: 1s;
-    
 }
