@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Vollkorn:wght@600&display=swap');
 
 body{
     margin:0;  
+
 }
 
-a {
-    text-decoration: none;
+@media (min-aspect-ratio: 16/9) {
+    #background-video {
+        width:100%;
+        height: auto;
+    }
 }
-
-#background-video {
-    height:auto;
-    width:100%;     
+@media (max-aspect-ratio: 16/9) {
+    #background-video { 
+        
+      height: 100vh;
+      min-width: auto;
+    }
 }
 
 img{
@@ -23,7 +28,6 @@ img{
     display: block;
     margin: auto; 
 }
-
 
 .center {
     opacity: .5;
