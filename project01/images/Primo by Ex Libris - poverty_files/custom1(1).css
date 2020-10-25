@@ -1,0 +1,1106 @@
+
+/* css imports for library theme */
+@import url(//fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://library.pdx.edu/wp-content/plugins/ubermenu/pro/assets/css/ubermenu.min.css?ver=3.4.1);
+@import url(https://library.pdx.edu/wp-content/plugins/ubermenu/assets/css/skins/blackwhite2.css?ver=4.9.7);
+@import url(https://content.library.pdx.edu/static/primo_theme/css/primo5-2018.css?ver=20170815);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+.psulib-top-bar-nav-link:hover {color:initial;}
+
+
+/* from primo5.css needs to be organized with other styles */
+
+/* remove italics from results count text */
+.results-count {font-style: normal;}
+
+/* remove book covers from related readings */
+div.media-figure {display: none;}
+
+/* button link colors */
+.md-button.hovered:not([disabled]), .md-button._md-focused:not([disabled]), .md-button.md-focused:not([disabled]), .md-button:focus:not([disabled])  {color:#005873 !important;}
+.md-button:hover:not([disabled]) {color:#5F710F !important;}
+
+
+/* magnify glass */
+.search-actions .button-confirm {color:#005873;}
+.md-button.button-confirm._md-focused:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .md-button.button-confirm:focus:not([disabled]), .md-button.button-confirm:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:hover:not([disabled]) {background-color:transparent; color:#5F710F;}
+
+/* page background */
+md-content, md-content.md-primoExplore-theme,.full-view-inner-container {background-color:whitesmoke;}
+
+/* search record background (non selected) */
+.list-item-wrapper {background-color:#FFF;}
+
+/* green holdings color */
+.fulltext, .fulltext_linktorsrc, .not_restricted, .prm-positive, .status-available, [class*=available], [class*=FT] {color:#5F710F;}
+.availability-status.available_in_maininstitution .locations-link {color:#5F710F;}
+.availability-status.available_in_my_institution .locations-link {color:#5F710F;}
+.availability-status.available_in_institution .locations-link {color:#5F710F;}
+.md-button span[translate="delivery.and.other.locations"] {color:#5F710F;}
+.fulltext:hover, .fulltext_linktorsrc:hover, .not_restricted:hover, .prm-positive:hover, .status-available:hover, [class*=available]:hover, [class*=FT]:hover {color:#84992A;}
+.md-button:hover .availability-status.available_in_maininstitution {color:#84992A;}
+.md-button:hover .availability-status.available_in_maininstitution .locations-link {color:#84992A;}
+.md-button:hover .availability-status.available_in_my_institution {color:#84992A;}
+.md-button:hover .availability-status.available_in_my_institution .locations-link {color:#84992A;}
+.md-button:hover .availability-status.available_in_institution {color:#84992A;}
+.md-button:hover .availability-status.available_in_institution .locations-link {color:#84992A;}
+.md-button:hover span[translate="delivery.and.other.locations"] {color:#84992A;}
+
+/* orange holdings color */
+.getit>span:first-of-type, .md-button.arrow-link-button prm-search-result-frbr-line .button-content>prm-icon:first-child, .prm-notice, .status-maybe, [class*=_more]>span:first-of-type, [class*=_unknown]>span:first-of-type, [class*=check_]>span:first-of-type, [class*=does_not_exist]>span:first-of-type, [class*=may_]>span:first-of-type, [class*=NFT]>span:first-of-type, prm-search-result-frbr-line .md-button.arrow-link-button .button-content>prm-icon:first-child, prm-search-result-frbr-line a>prm-icon:first-child {color:#005873;}
+.availability-status.no_fulltext[translate="delivery.code.no_fulltext"] span {color:#5F710F;}
+/* orange holdings color - hover */
+.getit>span:first-of-type:hover, .md-button.arrow-link-button prm-search-result-frbr-line .button-content>prm-icon:first-child:hover, .prm-notice:hover, .status-maybe:hover, [class*=_more]>span:first-of-type:hover, [class*=_unknown]>span:first-of-type:hover, [class*=check_]>span:first-of-type:hover, [class*=does_not_exist]>span:first-of-type:hover, [class*=may_]>span:first-of-type:hover, [class*=NFT]>span:first-of-type:hover, prm-search-result-frbr-line .md-button.arrow-link-button .button-content>prm-icon:first-child:hover, prm-search-result-frbr-line a>prm-icon:first-child:hover {color:#5F710F;}
+.availability-status.no_fulltext[translate="delivery.code.no_fulltext"]:hover span {color:#5F710F;}
+
+.getit, .md-button.arrow-link-button prm-search-result-frbr-line .button-content>prm-icon:first-child, .prm-notice, .status-maybe, [class*=_more], [class*=_unknown], [class*=check_], [class*=does_not_exist], [class*=may_], [class*=NFT], prm-search-result-frbr-line .md-button.arrow-link-button .button-content>prm-icon:first-child, prm-search-result-frbr-line a>prm-icon:first-child {color:#005873;}
+[class*=no_], [class*=unavailable] {color:#005873;}
+.getit:hover, .md-button.arrow-link-button prm-search-result-frbr-line .button-content>prm-icon:first-child:hover, .prm-notice:hover, .status-maybe:hover, [class*=_more]:hover, [class*=_unknown]:hover, [class*=check_]:hover, [class*=does_not_exist]:hover, [class*=may_]:hover, [class*=NFT]:hover, prm-search-result-frbr-line .md-button.arrow-link-button .button-content>prm-icon:first-child:hover, prm-search-result-frbr-line a>prm-icon:first-child:hover {color:#5F710F;}
+[class*=no_]:hover, [class*=unavailable]:hover {	color:#5F710F;}
+
+/* search result title */
+prm-brief-result .item-title span {color:#005873 !important;}
+prm-brief-result .item-title span:hover {color:#5F710F !important;}
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-background.prm-hue-1, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span {background-color:transparent;}
+mark {color:inherit;}
+
+/* search results icons */
+.md-autocomplete-suggestions .suggestion-scope, .prm-primary-color, .result-item-actions .md-icon-button, .result-item-actions .more-options-button, md-tab-content .tab-content-header md-input-container md-select-value .md-text, md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-active:not([disabled]), md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-focused:not([disabled]), prm-add-query-to-saved-searches .custom-button {color:#005873;}
+.result-item-actions .pin-button.pinned:focus, .result-item-actions .pin-button.pinned:hover {color:#5F710F;}
+
+/* action icons */
+.saved-query-list>md-nav-bar .md-nav-item .md-button, prm-action-list>md-nav-bar .md-nav-item .md-button {color:#005873;}
+.md-button.md-primary._md-focused:not([disabled]), .md-button.md-primary.hovered:not([disabled]), .md-button.md-primary.md-focused:not([disabled]), .md-button.md-primary:focus:not([disabled]), .md-button.md-primary:not([disabled]) {color:#005873;}
+.md-button.md-primary:hover:not([disabled]) {color:#5F710F;}
+
+/* filter show more links */
+.bar prm-authentication .md-button.link-alt-color, .bar prm-authentication .section-title prm-icon.md-button, .md-button.button-as-link.link-alt-color, .section-title .bar prm-authentication prm-icon.md-button, .section-title prm-icon.md-button.button-as-link {color:#005873;}
+.bar prm-authentication .md-button.link-alt-color._md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color.hovered:not([disabled]), .bar prm-authentication .md-button.link-alt-color.md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color:focus:not([disabled]), .bar prm-authentication .md-button.link-alt-color:hover:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button._md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.hovered:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:focus:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:hover:not([disabled]), .md-button.button-as-link.link-alt-color._md-focused:not([disabled]), .md-button.button-as-link.link-alt-color.hovered:not([disabled]), .md-button.button-as-link.link-alt-color.md-focused:not([disabled]), .md-button.button-as-link.link-alt-color:focus:not([disabled]), .md-button.button-as-link.link-alt-color:hover:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button._md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.hovered:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:focus:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:hover:not([disabled]), .section-title prm-icon.md-button.button-as-link._md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link.hovered:not([disabled]), .section-title prm-icon.md-button.button-as-link.md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link:focus:not([disabled]), .section-title prm-icon.md-button.button-as-link:hover:not([disabled]) {color:#5F710F; background-color:transparent;}
+/* filter caret icons */
+.link-alt-color, .prm-secondary-color.prm-hue1, .result-item-actions .pin-button, .section-title prm-icon, prm-add-query-to-saved-searches .custom-button.pin-button, prm-recomendation-item .media-on-hover .pin-button, prm-search-bookmark-filter .prm-hue1.md-button, prm-topbar .prm-hue1.top-nav-bar {color:#005873;}
+.link-alt-color:hover, .prm-secondary-color.prm-hue1:hover, .result-item-actions .pin-button:hover, .section-title prm-icon:hover, prm-add-query-to-saved-searches .custom-button.pin-button:hover, prm-recomendation-item .media-on-hover .pin-button:hover, prm-search-bookmark-filter .prm-hue1.md-button:hover, prm-topbar .prm-hue1.top-nav-bar:hover {color:#5F710F;}
+
+/* guest sign-in bar */
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-bg {background-color:#E6DC8F;}
+/* sign-in link */
+.bar prm-authentication .md-button._md-focused:not([disabled]), .bar prm-authentication .md-button.hovered:not([disabled]), .bar prm-authentication .md-button.md-focused:not([disabled]), .bar prm-authentication .md-button:focus:not([disabled]), .bar prm-authentication .md-button:not([disabled]), .md-button.button-as-link._md-focused:not([disabled]), .md-button.button-as-link.hovered:not([disabled]), .md-button.button-as-link.md-focused:not([disabled]), .md-button.button-as-link:focus:not([disabled]), .md-button.button-as-link:not([disabled]) {color:#005873;}
+.bar prm-authentication .md-button._md-focused:not([disabled]), .bar prm-authentication .md-button.hovered:not([disabled]), .bar prm-authentication .md-button.md-focused:not([disabled]), .bar prm-authentication .md-button:focus:not([disabled]), .bar prm-authentication .md-button:hover:not([disabled]), .md-button.button-as-link._md-focused:not([disabled]), .md-button.button-as-link.hovered:not([disabled]), .md-button.button-as-link.md-focused:not([disabled]), .md-button.button-as-link:focus:not([disabled]), .md-button.button-as-link:hover:not([disabled]) {color:#5F710F;}
+.md-button {color:#005873;}
+
+/* external link icon */
+[external-link] {color:inherit;}
+[external-link]:hover  {color:inherit;}
+
+/* item titles on record detail page -- remove link styles, because they aren't really links */
+prm-brief-result .item-title .full-view-mouse-pointer {color:#474334; text-decoration:none;}
+
+/* citations links */
+prm-citation-trails-indication .md-button.button-with-icon, prm-citation-trails-indication .md-button.md-icon-button {color:#005873;}
+prm-citation-trails-indication .md-button.button-with-icon._md-focused:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon.hovered:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon.md-focused:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon:focus:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon:hover:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button._md-focused:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button.hovered:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button.md-focused:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button:focus:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button:hover:not([disabled]) {color:#5F710F; background-color:transparent;}
+
+/* load more results */
+.md-button.button-confirm, .service-form-static-panel button.button-confirm prm-icon+span, .service-form-static-panel button.button-confirm prm-icon svg path {color:#005873;}
+
+/* login popup links */
+md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list md-list-item>.md-no-style .md-list-item-text h3, md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog md-list md-list-item>.md-no-style .md-list-item-text h3 {color:#005873;}
+.md-button:hover:not([disabled]) prm-login-item h3[translate="parallel.login.link1"] {color:#5F710F;}
+.md-button:hover:not([disabled]) prm-login-item h3[translate="parallel.login.link2"] {color:#5F710F;}
+.login-dialog .md-list[class$=-line] md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item .md-list-item-text h3, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text h3, .login-dialog .md-list md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item .md-list-item-text h3, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text h3, .login-dialog md-list md-list-item .md-list-item-text .list-item-title, .login-dialog md-list md-list-item .md-list-item-text h3, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text h3 {font-size:20px;}
+
+/* my account header */
+md-toolbar.md-primoExplore-theme .toolbar-title, md-toolbar .toolbar-title, md-toolbar:not(.md-menu-toolbar) .toolbar-title {color:#474334 !important;}
+
+/* my account tab bottom bar */
+.new-result-item .list-item-count, .prm-secondary-bg.prm-hue1, md-input-container:after, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue1.md-bar, md-radio-button.md-checked ._md-on, md-radio-button.md-checked .md-on, md-tabs md-ink-bar {background-color:#005873;}
+
+/* my account block header links */
+.tiles-grid-tile .tile-header .header-link {color:#005873;}
+.tiles-grid-tile .tile-header .header-link:hover {color:#5F710F;}
+
+/* my account - remove change language */
+prm-personal-info md-card:nth-child(2) {display: none;}
+
+/* my account - hide fines/fees tab and overview box on account screen */
+prm-account-overview md-tab-item:nth-child(4) {display:none;}
+prm-fines-overview {display:none;}
+/* my account - hide blocks+messages overview box on account screen */
+prm-messages-and-blocks-overview {display:none;}
+
+
+
+/* save search flash message link */
+prm-add-alert-toast md-toast .md-button.settings-button, prm-add-alert-toast md-toast .md-button.settings-button md-icon {color:#005873;}
+prm-add-alert-toast md-toast .md-toast-content .md-button {color:#005873;}
+
+/* page navigation */
+prm-page-nav-menu {z-index:51;}
+
+/* actions */
+md-nav-bar.wrapped-items ul {justify-content: flex-start;}
+
+/* exclude facet - psu red */
+#facets {z-index: 10 !important;}
+.available-facets .section-content .md-chips .md-chip .button-exclude {color:#D2492A;}
+prm-facet button.button-exclude prm-icon md-icon.md-primoExplore-theme {color:#D2492A !important;}
+.available-facets .section-content .md-chips .md-chip .button-exclude._md-focused:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude.hovered:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude.md-focused:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude:focus:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude:hover:not([disabled]) {color:#D2492A;}
+
+
+/* 5/15/17 meeting */
+
+/* search box background - gray */
+
+/* sign-in bar - gray with sienna links */
+/* sign-in toolbar */
+md-toolbar.md-primoExplore-theme {background-color:#d6d6d6 !important; height:60px;}
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar {background-color:#d6d6d6 !important;}
+.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar {background-color:#d6d6d6 !important;}
+md-toolbar md-icon {color:#005873 !important;}
+.hoverable-over-dark, .md-button.button-over-dark, prm-main-menu[menu-type=full] .md-button.md-focused, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:focus, prm-main-menu[menu-type=full] .md-button:focus, prm-main-menu[menu-type=full] .md-button:hover, prm-main-menu[menu-type=full] .md-button md-select:focus, prm-main-menu[menu-type=full] .overlay-menu-item.md-focused, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:focus, prm-main-menu[menu-type=full] .overlay-menu-item:focus, prm-main-menu[menu-type=full] .overlay-menu-item:hover, prm-main-menu[menu-type=full] .overlay-menu-item md-select:focus, prm-main-menu[menu-type=full] md-card:focus, prm-main-menu[menu-type=full] md-card:hover, prm-topbar .md-button, prm-user-area .md-button.user-menu-button, prm-user-area md-fab-toolbar ._md-fab-action-item .md-button, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container, prm-user-area md-fab-toolbar .md-fab-action-item .md-button, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container{color:#005873 !important;}
+.hoverable-over-dark:focus:not([disabled]), .hoverable-over-dark:hover:not([disabled]), .md-button.button-over-dark:focus:not([disabled]), .md-button.button-over-dark:hover:not([disabled]), prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button:hover:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item:hover:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] md-card:focus:not([disabled]), prm-main-menu[menu-type=full] md-card:hover:not([disabled]), prm-topbar .md-button:focus:not([disabled]), prm-topbar .md-button:hover:not([disabled]), prm-user-area .md-button.user-menu-button:focus:not([disabled]), prm-user-area .md-button.user-menu-button:hover:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:hover:not([disabled]){color:#5F710F !important;}
+prm-topbar .md-button:focus, prm-topbar .md-button:hover {color:#005873; background-color:#d6d6d6;}
+prm-user-area .user-menu-button .user-name{color:#005873 !important;}
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background{background-color:#d6d6d6 !important;}
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {background-color:#d6d6d6;}
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {color:#005873;}
+prm-user-area .user-name {color:#005873;}
+prm-user-area .user-menu-button .user-name:hover {color:#5F710F;}
+prm-user-area .md-button,button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {font-size:16px;}
+._md-focused.md-button.button-over-dark:not([disabled]), .hoverable-over-dark._md-focused:not([disabled]), .hoverable-over-dark.hovered:not([disabled]), .hoverable-over-dark.md-focused:not([disabled]), .hoverable-over-dark:focus:not([disabled]), .hoverable-over-dark:hover:not([disabled]), .hovered.md-button.button-over-dark:not([disabled]), .md-button.button-over-dark:focus:not([disabled]), .md-button.button-over-dark:hover:not([disabled]), .md-focused.md-button.button-over-dark:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.md-button.md-focused:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.md-button:not([disabled]):focus, prm-main-menu[menu-type=full] ._md-focused.md-button:not([disabled]):hover, prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item.md-focused:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item:not([disabled]):focus, prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item:not([disabled]):hover, prm-main-menu[menu-type=full] .hovered.md-button.md-focused:not([disabled]), prm-main-menu[menu-type=full] .hovered.md-button:not([disabled]):focus, prm-main-menu[menu-type=full] .hovered.md-button:not([disabled]):hover, prm-main-menu[menu-type=full] .hovered.overlay-menu-item.md-focused:not([disabled]), prm-main-menu[menu-type=full] .hovered.overlay-menu-item:not([disabled]):focus, prm-main-menu[menu-type=full] .hovered.overlay-menu-item:not([disabled]):hover, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>._md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.hovered.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button:hover:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .md-focused.md-button:not([disabled]), prm-main-menu[menu-type=full] .md-focused.overlay-menu-item:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>._md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.hovered.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item:hover:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] md-card._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] md-card._md-focused:not([disabled]):hover, prm-main-menu[menu-type=full] md-card.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] md-card.hovered:not([disabled]):hover, prm-main-menu[menu-type=full] md-card.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] md-card.md-focused:not([disabled]):hover, prm-main-menu[menu-type=full] md-card:focus:not([disabled]), prm-main-menu[menu-type=full] md-card:hover:not([disabled]), prm-topbar ._md-focused.md-button:not([disabled]), prm-topbar .hovered.md-button:not([disabled]), prm-topbar .md-button:focus:not([disabled]), prm-topbar .md-button:hover:not([disabled]), prm-topbar .md-focused.md-button:not([disabled]), prm-user-area ._md-focused.md-button.user-menu-button:not([disabled]), prm-user-area .hovered.md-button.user-menu-button:not([disabled]), prm-user-area .md-button.user-menu-button:focus:not([disabled]), prm-user-area .md-button.user-menu-button:hover:not([disabled]), prm-user-area .md-focused.md-button.user-menu-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item ._md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .hovered.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container._md-focused:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container.hovered:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container.md-focused:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item ._md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .hovered.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container._md-focused:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.hovered:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-focused:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:hover:not([disabled]){background-color:transparent;}
+prm-search-bookmark-filter #favorites-button{background-color:transparent;}
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span{box-shadow:none;}
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar{background-color:#d6d6d6;}
+md-toolbar.md-primoExplore-theme{background-color:#d6d6d6 !important;}
+prm-user-area .user-menu-button.md-button {color:#005873; background-color:#d6d6d6;}
+prm-user-area .user-menu-button.md-button:hover {color:#5F710F !important; background-color:#d6d6d6 !important;}
+/* username */
+prm-user-area .user-menu-button .user-name {max-width:100%;}
+/* account/signout links */
+md-toolbar .buttons-group .md-button:first-child {box-shadow:none;}
+
+/* clear for advanced search - use dark colors from cancel button on primo 4 */
+.md-button.button-notice {color:#474334;}
+.md-button.button-notice:hover {color:#5A5A5A;}
+
+/* search box section */
+.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar{background-color:#d6d6d6;}
+prm-journals-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {color:#005873;}
+prm-journals-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover, prm-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover {color:#5F710F; background-color:transparent;}
+prm-journals-search-bar .search-switch-buttons .md-button.switch-to-simple, prm-search-bar .search-switch-buttons .md-button.switch-to-simple {color:#005873;}
+prm-journals-search-bar .search-switch-buttons .md-button.switch-to-simple:hover, prm-search-bar .search-switch-buttons .md-button.switch-to-simple:hover {color:#5F710F; background-color:transparent;}
+/* search box padding */
+prm-search-bar {padding-top:0;}
+
+/* sign-in modal - gray stripe background - white background for header/footer */
+/* gray stripe background */
+.prm-primary-bg.prm-hue2, md-backdrop.md-opaque, prm-journals-search-bar.prm-hue2, prm-search-bar.prm-hue2, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after {background: #666666 url(http://content.library.pdx.edu/static/css/images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;}
+md-dialog.light-on-dark-dialog {color:#474334; background-color: #FFF;}
+md-dialog-content  md-list {background-color:#FFF;}
+
+/* sign-in mobile */
+.light-on-dark-dialog .md-button {color: #005873;}
+.md-icon-button.close-button {color:#005873 !important;}
+.custom-links-container.layout-wrap.layout-align-sm-start-start.layout-align-center-start.layout-row {display:none;}
+/* login popup */
+prm-login-item {max-width:100%;}
+md-list-item.md-2-line .md-list-item-text h3, md-list-item.md-2-line>._md-no-style .md-list-item-text h3, md-list-item.md-3-line .md-list-item-text h3, md-list-item.md-3-line>._md-no-style .md-list-item-text h3 {line-height:1.6em;}
+md-dialog.md-content-overflow .md-actions, md-dialog.md-content-overflow md-dialog-actions {border:0;}
+prm-login  .md-button {color:#005873;}
+prm-login h3[translate="parallel.login.link1"]:hover {color:#5F710F;}
+prm-login h3[translate="parallel.login.link2"]:hover  {color:#5F710F;}
+md-dialog.light-on-dark-dialog md-list md-list-item:hover>.md-no-style .md-list-item-text h3 {color:#5F710F;}
+md-dialog.light-on-dark-dialog md-list md-list-item>.md-no-style .md-list-item-text h3 {color:#5F710F;}
+md-dialog.light-on-dark-dialog md-list md-list-item>.md-no-style .md-list-item-text h3:hover {color:#5F710F;}
+
+/* my account */
+.md-button.button-link, .tiles-grid-tile .tile-content>.md-button, md-grid-tile .tile-content>.md-button  {color:#005873;}
+.md-button.button-link:hover, .tiles-grid-tile .tile-content>.md-button:hover, md-grid-tile .tile-content>.md-button:hover  {color:#5F710F !important;}
+prm-personal-info .button-link {color:#005873;}
+prm-personal-info .button-link:hover  {color:#5F710F;}
+/* discard link */
+prm-personal-info .md-button.button-warn {color:#474334;}
+prm-personal-info .md-button.button-warn:hover {color:#5A5A5A !important;}
+/* hide block and messages */
+
+
+/* bx recommender */
+prm-recomendation-item .weak-text {display:none;}
+.recommendations-title {color: #005873;}
+.recommendations-title:hover,.recommendations-title:focus  {color:#5F710F !important;}
+.md-button.arrow-link-button .button-content:focus {color:#5F710F !important;}
+.md-button.arrow-link-button .button-content:hover {color:#5F710F !important;}
+.md-button.arrow-link-button .hover.button-content {color:#5F710F !important;}
+.md-button.arrow-link-button:focus .button-content {color:#5F710F !important;}
+.md-button.arrow-link-button:hover .button-content {color:#5F710F !important;}
+.prm-links-hover.prm-hue-1 {color:#5F710F !important;}
+.recommendations-title.hover>span>span{color:#5F710F !important;}
+.recommendations-title:hover>span>span{color:#5F710F !important;}
+prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span{color:#5F710F !important;}
+prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span {color:#5F710F !important;}
+prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span {color:#5F710F !important;}
+
+/* change blue arrows to gray */
+prm-icon[icon-definition="chevron-right"] {color:#474334 !important;}
+/* change open in new window to gray */
+prm-icon[icon-definition="open-in-new"] {color:#474334;}
+prm-icon[icon-definition="open-in-new"]:hover {color:#474334;}
+.arrow-link [link-arrow] md-icon, .md-button.arrow-link-button [link-arrow] md-icon {opacity:1;}
+
+/* back links */
+.md-button.back-button {color: #005873 !important;}
+
+
+/* remove endnote action */
+li.md-nav-item[name="EndNote"] {display:none;}
+
+
+/* loading diamonds */
+prm-spinner.half-transparent .diamond {background-color:#474334;}
+.init-message .loader {color:#474334;}
+
+/* remove opacity for result top links */
+.result-item-actions>.md-button {opacity:1;}
+
+
+/* /from primo5.css needs to be organized with other styles */
+
+
+
+/* Hide Virtual Browse from the record detail view */
+#virtualBrowse {display:none;}
+
+/* Hide anchor navigation on record details popup */
+.prm-full-view-cont prm-full-view .services-index-under,.prm-full-view-dialog prm-full-view .services-index-under {display:none;}
+
+/* Make the Availability and Check Find & Request links.... bold and use larger font */
+prm-search-result-availability-line [availability-type] {font-size:16px;}
+prm-search-result-availability-line [availability-type] md-icon {height:16px; width:16px;}
+.arrow-link-button {font-weight:bold;font-size:16px !important;}
+.arrow-link [link-arrow] md-icon, .md-button.arrow-link-button [link-arrow] md-icon {width:22px; height:22px;}
+
+/* fix action items to make them more spaced out */
+prm-action-list>md-nav-bar ul {width:100%; justify-content: space-between;}
+.saved-query-list>md-nav-bar .md-nav-item, prm-action-list>md-nav-bar .md-nav-item {width:100%; max-width:120px;}
+
+/* hide scopes in search scopes drop down */
+md-option[value=psu_dark_horse] {display:none;} /* dark horse */
+
+/* don't show line under links */
+a:not(.md-button):focus, a:not(.md-button):hover {box-shadow: none;}
+
+/* psu library header */
+.navbar {margin-top:-100px;}
+#psulib_header_background {height:200px;}
+
+
+/* primo header */
+prm-logo {display:none;}
+.top-nav-bar-links a {}
+.top-nav-bar-links a:first-child {display:flex !important; box-shadow:none !important;}
+.top-nav-bar-links a:last-child {display:flex !important; box-shadow:none;}
+header prm-icon md-icon, header prm-icon md-icon.md-primoExplore-theme {color:#FFF !important;}
+
+/* browse search box */
+.prm-primary-bg, prm-browse-search-bar, prm-journals-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar {background-color:#d6d6d6;}
+
+/* browse search results */
+md-list.prm-list.prm-linkable-list-items md-list-item .item-title, prm-browse-search md-list.prm-list.prm-linkable-list-items md-list-item .item-title, prm-citation-trails-item.active-item .item-title, prm-tags-results-list md-list.prm-list.prm-linkable-list-items md-list-item .item-title {color:#005873;}
+md-list.prm-list.prm-linkable-list-items md-list-item:hover .item-title, prm-browse-search md-list.prm-list.prm-linkable-list-items md-list-item:hover .item-title, prm-citation-trails-item.active-item:hover .item-title, prm-tags-results-list md-list.prm-list.prm-linkable-list-items md-list-item:hover .item-title {color:#5F710F;}
+
+
+
+/* standard search box */
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar { background-color: #005873; }
+md-toolbar.dark-toolbar, md-toolbar.md-primoExplore-theme.dark-toolbar, md-toolbar:not(.md-menu-toolbar).dark-toolbar { background-color: #005873; }
+prm-search-bar .prm-top-bar-container .search-element .search-actions .btn-confirm, prm-search-bar .prm-top-bar-container .search-element .search-actions .md-button {background-color:#005873 !important;}
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background { background-color: #005873; }
+prm-search-bar .prm-top-bar-container .search-element {width:75%;}
+prm-search-bar .prm-top-bar-container .search-element .search-input-container md-autocomplete-wrap input:hover {background-color: #FFF; color:#000; }
+prm-search-bar .prm-top-bar-container .search-element .search-input-container { background-color: #FFF;}
+prm-search-bar .prm-top-bar-container .search-element .search-input-container md-autocomplete-wrap input {color:#000;}
+prm-search-bar .main-header-row {padding-top: 0; padding-bottom: 0;}
+.md-button, md-card md-card-header md-card-avatar+md-card-header-text .md-title, md-card md-card-header md-card-header-text .md-subhead {}
+prm-user-area>.md-button {padding: 0 1em !important;}
+prm-search-bar .prm-top-bar-container .search-element .search-input-container {color:#000 !important;}
+prm-search-bar .prm-top-bar-container .search-element .search-input-container ::-webkit-input-placeholder {color: #999 !important;}
+prm-search-bar .prm-top-bar-container .search-element .search-input-container :-moz-placeholder {color: #999 !important; opacity:  1;}
+prm-search-bar .prm-top-bar-container .search-element .search-input-container ::-moz-placeholder {color: #999 !important; opacity:  1;}
+prm-search-bar .prm-top-bar-container .search-element .search-input-container :-ms-input-placeholder {color: #999 !important;}
+prm-search-bar .prm-top-bar-container .search-element {border:1px solid #FFF;}
+prm-search-bar .prm-top-bar-container .search-element .search-input-container md-autocomplete-wrap input+button {color:#000; background-color:#FFF; padding:0;}
+.flex-md-10, .layout-md-row>.flex-md-10, .layout-row>.flex-md-10 {-webkit-flex: 0;-ms-flex: 0;flex: 0;}
+
+
+/* august release changes */
+.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar  { background-color: #005873; }
+input[type="search"] {width:inherit;}
+button, input, textarea {border: inherit;}
+
+/* login */
+prm-user-area .user-menu-button .user-name {color:#FFF;}
+
+/* action items */
+/* hide easybib */
+md-tabs-canvas md-pagination-wrapper md-tab-item:nth-child(5) {display:none;}
+
+
+/* header */
+.custom-header {height: 240px;}
+
+/* search box */
+input:focus, textarea:focus {border: inherit;}
+
+/* mobile/tablet facets */
+md-toolbar.bottom-fixed-toolbar, md-toolbar.md-primoExplore-theme.bottom-fixed-toolbar, md-toolbar:not(.md-menu-toolbar).bottom-fixed-toolbar {z-index:50;}
+
+
+body {background-color: inherit;}
+
+/* refine my results mobile/tablet */
+md-toolbar button.md-button {color:#FFF;}
+md-toolbar button.md-button:focus, md-toolbar button.md-button:hover {color:#FFF !important;} 
+
+
+/* ubermenu z-index */
+#megaMenu.megaFullWidth {z-index:50;}
+
+/* turn off fly to fav pin animation */
+.pinDummy.animating{animation:none !important;}
+/* full setup for animation in case further customization is desired - from: http://alliance-primo-sb.hosted.exlibrisgroup.com/primo-explore/lib/app-e9216f9008.css */
+/*
+.pinDummy{position:absolute;z-index:1000;transition:all .3s cubic-bezier(.55,0,.55,.2);transition-duration:.5s;background-color:transparent;border-radius:50%;width:38px;height:38px;padding:.5em;opacity:0;overflow:hidden}
+.pinDummy:before{background-color:tomato;opacity:0;z-index:0;transition:opacity .3s linear .3s}
+.pinDummy:after,.pinDummy:before{content:"";position:absolute;width:100%;height:100%;top:0;left:0}
+.pinDummy:after{background-color:#fff;opacity:1;z-index:-1;transition:opacity .2s linear .5s}
+.pinDummy prm-icon{color:#45aab4;transition:color .4s linear .1s}
+.pinDummy md-icon{transform:rotate(20deg)}
+.pinDummy.animating{animation:flyToFav 1s cubic-bezier(.25,.8,.25,1) forwards}
+.pinDummy.animating prm-icon{color:#fff}
+.pinDummy.animating md-icon{transition:transform .7s cubic-bezier(.55,0,.55,.2);transform:rotate(-415deg)}
+.pinDummy.animating:before{opacity:1}
+.pinDummy.animating:after{opacity:0}
+@keyframes flyToFav{0%{opacity:0;transform:scale3d(.85,.85,1);box-shadow:0 0 0 0 transparent}5%{opacity:1}50%{transform:scaleX(1);box-shadow:0 15px 12px -6px rgba(0,0,0,.15);transition:all .4s cubic-bezier(.25,.8,.25,1)}70%{opacity:1}80%{opacity:0}}
+*/
+
+/* toolbar title */
+md-toolbar.md-primoExplore-theme .toolbar-title, md-toolbar .toolbar-title, md-toolbar:not(.md-menu-toolbar) .toolbar-title {color:#FFF;}
+.md-button.back-button {color:#FFF;}
+.md-button.back-button._md-focused:not([disabled]), .md-button.back-button.hovered:not([disabled]), .md-button.back-button.md-focused:not([disabled]), .md-button.back-button:focus:not([disabled]), .md-button.back-button:hover:not([disabled]) {color:#FFF;}
+
+/* action buttons */
+.md-button._md-nav-button {padding-left:0; padding-right:0;}
+.saved-query-list>md-nav-bar .md-nav-item:last-of-type, prm-action-list>md-nav-bar .md-nav-item:last-of-type {margin-right:0;}
+
+/* filters */
+.section-title-header, .sidebar-header {margin-top:0;}
+.md-button {font-size:16px;}
+button, input[type="submit"], input[type="button"], input[type="reset"] {color:#474334; padding: 0 6px;}
+button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {background-color: transparent; padding: 0 6px;}
+button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {background-color: transparent; padding: 0 6px;}
+button:focus, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus {background-color: rgba(58,58,58,.1); padding: 0 6px;}
+
+.hide_show_other_institutions_button {color:#FFF; background-color: #005873; background-image: none; border-radius: 3px; font-size: 16px; border: none; padding: 7px 24px !important;}
+.hide_show_other_institutions_button:focus,.hide_show_other_institutions_button:hover {background-color: #b5654c; padding: 7px 24px;}
+
+
+/* item details - parked pages */
+/* left anchor links */
+.services-index-under {display:none;}
+
+
+/* hide english option on mobile/tablet account overlay */
+prm-main-menu div.settings-container div div.overlay-menu-item {display:none;}
+prm-main-menu div.settings-container div md-divider:nth-child(1) {display:none;}
+prm-main-menu[menu-type=full] .settings-container md-divider {display:none;}
+
+
+
+/* ubermenu customizations */
+#megaMenu ul li.menu-item.ss-nav-menu-mega ul.sub-menu-1 > li.menu-item > a, #megaMenu ul li.menu-item.ss-nav-menu-mega ul.sub-menu-1 > li.menu-item:hover > a, #megaMenu ul li.menu-item.ss-nav-menu-mega ul ul.sub-menu .ss-nav-menu-header > a, #megaMenu ul li.menu-item.ss-nav-menu-mega ul.sub-menu-1 > li.menu-item > span.um-anchoremulator, #megaMenu ul li.menu-item.ss-nav-menu-mega ul ul.sub-menu .ss-nav-menu-header > span.um-anchoremulator, #megaMenu .wpmega-widgetarea h2.widgettitle {border-bottom: 1px solid #000; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0);}
+#megaMenu ul.megaMenu li.menu-item.ss-nav-menu-reg li.menu-item.megaReg-with-sub > a:after, #megaMenu ul.megaMenu li.menu-item.mega-with-sub > a:after, #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > a:after, #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-reg li.menu-item.megaReg-with-sub > span.um-anchoremulator:after, #megaMenu ul.megaMenu li.menu-item.mega-with-sub > span.um-anchoremulator:after, #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > span.um-anchoremulator:after {border-width: 6px 6px 0 !important; right:0;}
+#megaMenu ul.megaMenu li.menu-item.mega-with-sub > a:after, #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > a:after, #megaMenu ul.megaMenu li.menu-item.mega-with-sub > span.um-anchoremulator:after, #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > span.um-anchoremulator:after {border-top-color: #FFF;}
+#megaMenu ul.megaMenu > li.menu-item > a, #megaMenu ul.megaMenu > li.menu-item > span.um-anchoremulator, .megaMenuToggle {font-size: 23px}
+#megaMenu ul li.menu-item.ss-nav-menu-mega ul ul.sub-menu li.menu-item > a, #megaMenu ul li.menu-item.ss-nav-menu-mega ul ul.sub-menu li.menu-item > span.um-anchoremulator, #megaMenu ul ul.sub-menu li.menu-item > a, #megaMenu ul ul.sub-menu li.menu-item > span.um-anchoremulator {font-size:13px;}
+/* smaller than desktop */
+@media (max-width: 1199px) {
+	#megaMenu ul.megaMenu > li.menu-item > a, #megaMenu ul.megaMenu > li.menu-item > span.um-anchoremulator, .megaMenuToggle {font-size: 20px;}
+}
+/* smaller than ipad landscape (mobile) */
+@media (max-width: 1023px) {
+	#megaMenu ul.megaMenu > li.menu-item > a, #megaMenu ul.megaMenu > li.menu-item > span.um-anchoremulator, .megaMenuToggle {font-size: 14px;}
+}
+#megaMenu {height:inherit;}
+
+
+/* hide fines/fees tab and overview box on account screen */
+prm-account-overview md-tab-item:nth-child(4) {display:none;}
+prm-fines-overview {display:none;}
+
+/* magnify glass */
+.search-actions .button-confirm {color:#005873;}
+.md-button.button-confirm._md-focused:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .md-button.button-confirm:focus:not([disabled]), .md-button.button-confirm:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:hover:not([disabled]) {background-color:transparent; color:#5F710F;}
+
+/* page background */
+md-content, md-content.md-primoExplore-theme,.full-view-inner-container {background-color:whitesmoke;}
+
+/* search record background (non selected) */
+.list-item-wrapper {background-color:#FFF;}
+
+/* green holdings color */
+.availability-status.available_in_maininstitution{color:#5F710F}
+.availability-status.available_in_institution {color:#5F710F}
+.fulltext>span:first-of-type, .fulltext_linktorsrc>span:first-of-type, .not_restricted>span:first-of-type, .prm-positive, .status-available, [class*=available]>span:first-of-type, [class*=FT]>span:first-of-type {color:#5F710F}
+prm-icon[icon-definition="open-in-new"] {color:#5F710F;}
+prm-icon[icon-definition="open-in-new"]:hover {color:#5F710F;}
+
+
+/* orange holdings color */
+.getit>span:first-of-type, .md-button.arrow-link-button prm-search-result-frbr-line .button-content>prm-icon:first-child, .prm-notice, .status-maybe, [class*=_more]>span:first-of-type, [class*=_unknown]>span:first-of-type, [class*=check_]>span:first-of-type, [class*=does_not_exist]>span:first-of-type, [class*=may_]>span:first-of-type, [class*=NFT]>span:first-of-type, prm-search-result-frbr-line .md-button.arrow-link-button .button-content>prm-icon:first-child, prm-search-result-frbr-line a>prm-icon:first-child {color:#5F710F;}
+
+/* search result title */
+prm-brief-result .item-title span {color:#005873 !important;}
+prm-brief-result .item-title span:hover {color:#5F710F !important;}
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-background.prm-hue-1, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span {background-color:transparent;}
+mark {color:inherit;}
+
+/* search results icons */
+.md-autocomplete-suggestions .suggestion-scope, .prm-primary-color, .result-item-actions .md-icon-button, .result-item-actions .more-options-button, md-tab-content .tab-content-header md-input-container md-select-value .md-text, md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-active:not([disabled]), md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-focused:not([disabled]), prm-add-query-to-saved-searches .custom-button {color:#005873;}
+.md-button._md-focused:not([disabled]), .md-button.hovered:not([disabled]), .md-button.md-focused:not([disabled]), .md-button:focus:not([disabled]), .md-button:hover:not([disabled]) {color:#5F710F;}
+.result-item-actions .pin-button.pinned:focus, .result-item-actions .pin-button.pinned:hover {color:#5F710F;}
+
+/* action icons */
+.saved-query-list>md-nav-bar .md-nav-item .md-button, prm-action-list>md-nav-bar .md-nav-item .md-button {color:#005873;}
+.md-button.md-primary._md-focused:not([disabled]), .md-button.md-primary.hovered:not([disabled]), .md-button.md-primary.md-focused:not([disabled]), .md-button.md-primary:focus:not([disabled]), .md-button.md-primary:not([disabled]) {color:#005873;}
+.md-button.md-primary:hover:not([disabled]) {color:#5F710F;}
+
+/* filter show more links */
+.bar prm-authentication .md-button.link-alt-color, .bar prm-authentication .section-title prm-icon.md-button, .md-button.button-as-link.link-alt-color, .section-title .bar prm-authentication prm-icon.md-button, .section-title prm-icon.md-button.button-as-link {color:#005873;}
+.bar prm-authentication .md-button.link-alt-color._md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color.hovered:not([disabled]), .bar prm-authentication .md-button.link-alt-color.md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color:focus:not([disabled]), .bar prm-authentication .md-button.link-alt-color:hover:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button._md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.hovered:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:focus:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:hover:not([disabled]), .md-button.button-as-link.link-alt-color._md-focused:not([disabled]), .md-button.button-as-link.link-alt-color.hovered:not([disabled]), .md-button.button-as-link.link-alt-color.md-focused:not([disabled]), .md-button.button-as-link.link-alt-color:focus:not([disabled]), .md-button.button-as-link.link-alt-color:hover:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button._md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.hovered:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:focus:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:hover:not([disabled]), .section-title prm-icon.md-button.button-as-link._md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link.hovered:not([disabled]), .section-title prm-icon.md-button.button-as-link.md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link:focus:not([disabled]), .section-title prm-icon.md-button.button-as-link:hover:not([disabled]) {color:#5F710F; background-color:transparent;}
+/* filter caret icons */
+.link-alt-color, .prm-secondary-color.prm-hue1, .result-item-actions .pin-button, .section-title prm-icon, prm-add-query-to-saved-searches .custom-button.pin-button, prm-recomendation-item .media-on-hover .pin-button, prm-search-bookmark-filter .prm-hue1.md-button, prm-topbar .prm-hue1.top-nav-bar {color:#005873;}
+.link-alt-color:hover, .prm-secondary-color.prm-hue1:hover, .result-item-actions .pin-button:hover, .section-title prm-icon:hover, prm-add-query-to-saved-searches .custom-button.pin-button:hover, prm-recomendation-item .media-on-hover .pin-button:hover, prm-search-bookmark-filter .prm-hue1.md-button:hover, prm-topbar .prm-hue1.top-nav-bar:hover {color:#5F710F;}
+
+/* sign-in bar */
+prm-user-area md-fab-toolbar ._md-fab-action-item .md-button, prm-user-area md-fab-toolbar .md-fab-action-item .md-button {font-size:16px !important; padding:0 6px !important;}
+
+/* guest sign-in bar */
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-bg {background-color:#E6DC8F;}
+/* sign-in link */
+.bar prm-authentication .md-button._md-focused:not([disabled]), .bar prm-authentication .md-button.hovered:not([disabled]), .bar prm-authentication .md-button.md-focused:not([disabled]), .bar prm-authentication .md-button:focus:not([disabled]), .bar prm-authentication .md-button:not([disabled]), .md-button.button-as-link._md-focused:not([disabled]), .md-button.button-as-link.hovered:not([disabled]), .md-button.button-as-link.md-focused:not([disabled]), .md-button.button-as-link:focus:not([disabled]), .md-button.button-as-link:not([disabled]) {color:#005873;}
+.bar prm-authentication .md-button._md-focused:not([disabled]), .bar prm-authentication .md-button.hovered:not([disabled]), .bar prm-authentication .md-button.md-focused:not([disabled]), .bar prm-authentication .md-button:focus:not([disabled]), .bar prm-authentication .md-button:hover:not([disabled]), .md-button.button-as-link._md-focused:not([disabled]), .md-button.button-as-link.hovered:not([disabled]), .md-button.button-as-link.md-focused:not([disabled]), .md-button.button-as-link:focus:not([disabled]), .md-button.button-as-link:hover:not([disabled]) {color:#5F710F;}
+.md-button {color:#005873;}
+
+/* patron name link */
+.prm-primary-bg.prm-hue3-important, prm-browse-search-bar.prm-hue3-important, prm-journals-search-bar.prm-hue3-important, prm-search-bar.prm-hue3-important, prm-spinner.prm-hue3-important.overlay-cover.light-on-dark:after, prm-tags-search-bar.prm-hue3-important, prm-user-area md-fab-toolbar.md-is-open md-fab-trigger ._md-fab-toolbar-background, prm-user-area md-fab-toolbar.md-is-open md-fab-trigger .md-fab-toolbar-background {background-color:#d6d6d6 !important;}
+prm-user-area .user-menu-button .user-name:hover {color:#5F710F !important;}
+
+/* external link icon */
+[external-link] {color:inherit;}
+[external-link]:hover  {color:inherit;}
+
+/* item titles on record detail page -- remove link styles, because they aren't really links */
+prm-brief-result .item-title .full-view-mouse-pointer {color:#474334; text-decoration:none;}
+
+/* citations links */
+prm-citation-trails-indication .md-button.button-with-icon, prm-citation-trails-indication .md-button.md-icon-button {color:#005873;}
+prm-citation-trails-indication .md-button.button-with-icon._md-focused:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon.hovered:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon.md-focused:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon:focus:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon:hover:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button._md-focused:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button.hovered:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button.md-focused:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button:focus:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button:hover:not([disabled]) {color:#5F710F; background-color:transparent;}
+
+/* load more results */
+.md-button.button-confirm, .service-form-static-panel button.button-confirm prm-icon+span, .service-form-static-panel button.button-confirm prm-icon svg path {color:#005873;}
+
+/* login popup links */
+md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list md-list-item>.md-no-style .md-list-item-text h3, md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog md-list md-list-item>.md-no-style .md-list-item-text h3 {color:#005873;}
+.login-dialog .md-list[class$=-line] md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item .md-list-item-text h3, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text h3, .login-dialog .md-list md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item .md-list-item-text h3, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text h3, .login-dialog md-list md-list-item .md-list-item-text .list-item-title, .login-dialog md-list md-list-item .md-list-item-text h3, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text h3 {font-size:20px;}
+
+/* my account tab bottom bar */
+.new-result-item .list-item-count, .prm-secondary-bg.prm-hue1, md-input-container:after, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue1.md-bar, md-radio-button.md-checked ._md-on, md-radio-button.md-checked .md-on, md-tabs md-ink-bar {background-color:#005873;}
+
+/* my account block header links */
+.tiles-grid-tile .tile-header .header-link {color:#005873;}
+.tiles-grid-tile .tile-header .header-link:hover {color:#5F710F;}
+
+/* save search flash message link */
+prm-add-alert-toast md-toast .md-button.settings-button, prm-add-alert-toast md-toast .md-button.settings-button md-icon {color:#005873;}
+prm-add-alert-toast md-toast .md-toast-content .md-button {color:#005873;}
+
+/* page navigation */
+prm-page-nav-menu {z-index:51;}
+
+/* actions */
+md-nav-bar.wrapped-items ul {justify-content: flex-start;}
+
+
+a:hover {text-decoration:none !important;}
+
+/* hide fines/fees tab and overview box on account screen */
+prm-account-overview md-tab-item:nth-child(4) {display:none;}
+prm-fines-overview {display:none;}
+
+/* magnify glass */
+.search-actions .button-confirm {color:#005873;}
+.md-button.button-confirm._md-focused:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .md-button.button-confirm:focus:not([disabled]), .md-button.button-confirm:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:hover:not([disabled]) {background-color:transparent; color:#5F710F;}
+
+/* page background */
+md-content, md-content.md-primoExplore-theme,.full-view-inner-container {background-color:whitesmoke;}
+
+/* search record background (non selected) */
+.list-item-wrapper {background-color:#FFF;}
+
+/* green holdings color */
+.availability-status.available_in_maininstitution{color:#5F710F}
+
+/* orange holdings color */
+.getit>span:first-of-type, .md-button.arrow-link-button prm-search-result-frbr-line .button-content>prm-icon:first-child, .prm-notice, .status-maybe, [class*=_more]>span:first-of-type, [class*=_unknown]>span:first-of-type, [class*=check_]>span:first-of-type, [class*=does_not_exist]>span:first-of-type, [class*=may_]>span:first-of-type, [class*=NFT]>span:first-of-type, prm-search-result-frbr-line .md-button.arrow-link-button .button-content>prm-icon:first-child, prm-search-result-frbr-line a>prm-icon:first-child {color:#5F710F;}
+
+/* search result title */
+prm-brief-result .item-title span {color:#005873 !important;}
+prm-brief-result .item-title span:hover {color:#5F710F !important;}
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-background.prm-hue-1, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span {background-color:transparent;}
+mark {color:inherit;}
+
+/* search results icons */
+.md-autocomplete-suggestions .suggestion-scope, .prm-primary-color, .result-item-actions .md-icon-button, .result-item-actions .more-options-button, md-tab-content .tab-content-header md-input-container md-select-value .md-text, md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-active:not([disabled]), md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-focused:not([disabled]), prm-add-query-to-saved-searches .custom-button {color:#005873;}
+.md-button._md-focused:not([disabled]), .md-button.hovered:not([disabled]), .md-button.md-focused:not([disabled]), .md-button:focus:not([disabled]), .md-button:hover:not([disabled]) {color:#5F710F !important;}
+.result-item-actions .pin-button.pinned:focus, .result-item-actions .pin-button.pinned:hover {color:#5F710F;}
+
+/* action icons */
+.saved-query-list>md-nav-bar .md-nav-item .md-button, prm-action-list>md-nav-bar .md-nav-item .md-button {color:#005873;}
+.md-button.md-primary._md-focused:not([disabled]), .md-button.md-primary.hovered:not([disabled]), .md-button.md-primary.md-focused:not([disabled]), .md-button.md-primary:focus:not([disabled]), .md-button.md-primary:not([disabled]) {color:#005873;}
+.md-button.md-primary:hover:not([disabled]) {color:#5F710F;}
+
+/* filter show more links */
+.bar prm-authentication .md-button.link-alt-color, .bar prm-authentication .section-title prm-icon.md-button, .md-button.button-as-link.link-alt-color, .section-title .bar prm-authentication prm-icon.md-button, .section-title prm-icon.md-button.button-as-link {color:#005873;}
+.bar prm-authentication .md-button.link-alt-color._md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color.hovered:not([disabled]), .bar prm-authentication .md-button.link-alt-color.md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color:focus:not([disabled]), .bar prm-authentication .md-button.link-alt-color:hover:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button._md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.hovered:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:focus:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:hover:not([disabled]), .md-button.button-as-link.link-alt-color._md-focused:not([disabled]), .md-button.button-as-link.link-alt-color.hovered:not([disabled]), .md-button.button-as-link.link-alt-color.md-focused:not([disabled]), .md-button.button-as-link.link-alt-color:focus:not([disabled]), .md-button.button-as-link.link-alt-color:hover:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button._md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.hovered:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:focus:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:hover:not([disabled]), .section-title prm-icon.md-button.button-as-link._md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link.hovered:not([disabled]), .section-title prm-icon.md-button.button-as-link.md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link:focus:not([disabled]), .section-title prm-icon.md-button.button-as-link:hover:not([disabled]) {color:#5F710F; background-color:transparent;}
+/* filter caret icons */
+.link-alt-color, .prm-secondary-color.prm-hue1, .result-item-actions .pin-button, .section-title prm-icon, prm-add-query-to-saved-searches .custom-button.pin-button, prm-recomendation-item .media-on-hover .pin-button, prm-search-bookmark-filter .prm-hue1.md-button, prm-topbar .prm-hue1.top-nav-bar {color:#005873;}
+.link-alt-color:hover, .prm-secondary-color.prm-hue1:hover, .result-item-actions .pin-button:hover, .section-title prm-icon:hover, prm-add-query-to-saved-searches .custom-button.pin-button:hover, prm-recomendation-item .media-on-hover .pin-button:hover, prm-search-bookmark-filter .prm-hue1.md-button:hover, prm-topbar .prm-hue1.top-nav-bar:hover {color:#5F710F;}
+
+/* guest sign-in bar */
+.bar.alert-bar, .classic-input .search-scope, .prm-alert-bg {background-color:#E6DC8F;}
+/* sign-in link */
+.bar prm-authentication .md-button._md-focused:not([disabled]), .bar prm-authentication .md-button.hovered:not([disabled]), .bar prm-authentication .md-button.md-focused:not([disabled]), .bar prm-authentication .md-button:focus:not([disabled]), .bar prm-authentication .md-button:not([disabled]), .md-button.button-as-link._md-focused:not([disabled]), .md-button.button-as-link.hovered:not([disabled]), .md-button.button-as-link.md-focused:not([disabled]), .md-button.button-as-link:focus:not([disabled]), .md-button.button-as-link:not([disabled]) {color:#005873;}
+.bar prm-authentication .md-button._md-focused:not([disabled]), .bar prm-authentication .md-button.hovered:not([disabled]), .bar prm-authentication .md-button.md-focused:not([disabled]), .bar prm-authentication .md-button:focus:not([disabled]), .bar prm-authentication .md-button:hover:not([disabled]), .md-button.button-as-link._md-focused:not([disabled]), .md-button.button-as-link.hovered:not([disabled]), .md-button.button-as-link.md-focused:not([disabled]), .md-button.button-as-link:focus:not([disabled]), .md-button.button-as-link:hover:not([disabled]) {color:#5F710F;}
+.md-button {color:#005873;}
+
+/* external link icon */
+[external-link] {color:inherit;}
+[external-link]:hover  {color:inherit;}
+
+/* item titles on record detail page -- remove link styles, because they aren't really links */
+prm-brief-result .item-title .full-view-mouse-pointer {color:#474334; text-decoration:none;}
+
+/* citations links */
+prm-citation-trails-indication .md-button.button-with-icon, prm-citation-trails-indication .md-button.md-icon-button {color:#005873;}
+prm-citation-trails-indication .md-button.button-with-icon._md-focused:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon.hovered:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon.md-focused:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon:focus:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon:hover:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button._md-focused:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button.hovered:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button.md-focused:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button:focus:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button:hover:not([disabled]) {color:#5F710F; background-color:transparent;}
+
+/* load more results */
+.md-button.button-confirm, .service-form-static-panel button.button-confirm prm-icon+span, .service-form-static-panel button.button-confirm prm-icon svg path {color:#005873;}
+
+/* login popup links */
+md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog .md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog .md-list md-list-item>.md-no-style .md-list-item-text h3, md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text h3, md-dialog.light-on-dark-dialog md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog md-list md-list-item>.md-no-style .md-list-item-text h3 {color:#005873;}
+.login-dialog .md-list[class$=-line] md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item .md-list-item-text h3, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text h3, .login-dialog .md-list md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item .md-list-item-text h3, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text h3, .login-dialog md-list md-list-item .md-list-item-text .list-item-title, .login-dialog md-list md-list-item .md-list-item-text h3, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text h3 {font-size:20px;}
+
+/* my account tab bottom bar */
+.new-result-item .list-item-count, .prm-secondary-bg.prm-hue1, md-input-container:after, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue1.md-bar, md-radio-button.md-checked ._md-on, md-radio-button.md-checked .md-on, md-tabs md-ink-bar {background-color:#005873;}
+
+/* my account block header links */
+.tiles-grid-tile .tile-header .header-link {color:#005873;}
+.tiles-grid-tile .tile-header .header-link:hover {color:#5F710F;}
+
+/* save search flash message link */
+prm-add-alert-toast md-toast .md-button.settings-button, prm-add-alert-toast md-toast .md-button.settings-button md-icon {color:#005873;}
+prm-add-alert-toast md-toast .md-toast-content .md-button {color:#005873;}
+
+/* page navigation */
+prm-page-nav-menu {z-index:51;}
+
+/* actions */
+md-nav-bar.wrapped-items ul {justify-content: flex-start;}
+
+/* exclude facet - psu red */
+.available-facets .section-content .md-chips .md-chip .button-exclude {color:#D2492A;}
+.available-facets .section-content .md-chips .md-chip .button-exclude._md-focused:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude.hovered:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude.md-focused:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude:focus:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude:hover:not([disabled]) {color:#D2492A;}
+
+
+/* sign-in bar - gray with sienna links */
+/* sign-in toolbar */
+md-toolbar.md-primoExplore-theme {background-color:#d6d6d6 !important; height:60px;}
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar {background-color:#d6d6d6 !important;}
+.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar {background-color:#d6d6d6 !important;}
+md-toolbar md-icon {color:#005873 !important;}
+.hoverable-over-dark, .md-button.button-over-dark, prm-main-menu[menu-type=full] .md-button.md-focused, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:focus, prm-main-menu[menu-type=full] .md-button:focus, prm-main-menu[menu-type=full] .md-button:hover, prm-main-menu[menu-type=full] .md-button md-select:focus, prm-main-menu[menu-type=full] .overlay-menu-item.md-focused, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:focus, prm-main-menu[menu-type=full] .overlay-menu-item:focus, prm-main-menu[menu-type=full] .overlay-menu-item:hover, prm-main-menu[menu-type=full] .overlay-menu-item md-select:focus, prm-main-menu[menu-type=full] md-card:focus, prm-main-menu[menu-type=full] md-card:hover, prm-topbar .md-button, prm-user-area .md-button.user-menu-button, prm-user-area md-fab-toolbar ._md-fab-action-item .md-button, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container, prm-user-area md-fab-toolbar .md-fab-action-item .md-button, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container{color:#005873 !important;}
+.hoverable-over-dark:focus:not([disabled]), .hoverable-over-dark:hover:not([disabled]), .md-button.button-over-dark:focus:not([disabled]), .md-button.button-over-dark:hover:not([disabled]), prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button:hover:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item:hover:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] md-card:focus:not([disabled]), prm-main-menu[menu-type=full] md-card:hover:not([disabled]), prm-topbar .md-button:focus:not([disabled]), prm-topbar .md-button:hover:not([disabled]), prm-user-area .md-button.user-menu-button:focus:not([disabled]), prm-user-area .md-button.user-menu-button:hover:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:hover:not([disabled]){color:#5F710F !important;}
+prm-topbar .md-button:focus, prm-topbar .md-button:hover {color:#005873; background-color:#d6d6d6;}
+prm-user-area .user-menu-button .user-name{color:#005873 !important;}
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background{background-color:#d6d6d6;}
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {background-color:#d6d6d6;}
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {color:#005873;}
+prm-user-area .user-name {color:#005873;}
+prm-user-area .user-menu-button .user-name:hover {color:#5F710F;}
+prm-user-area .md-button,button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {font-size:16px;}
+._md-focused.md-button.button-over-dark:not([disabled]), .hoverable-over-dark._md-focused:not([disabled]), .hoverable-over-dark.hovered:not([disabled]), .hoverable-over-dark.md-focused:not([disabled]), .hoverable-over-dark:focus:not([disabled]), .hoverable-over-dark:hover:not([disabled]), .hovered.md-button.button-over-dark:not([disabled]), .md-button.button-over-dark:focus:not([disabled]), .md-button.button-over-dark:hover:not([disabled]), .md-focused.md-button.button-over-dark:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.md-button.md-focused:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.md-button:not([disabled]):focus, prm-main-menu[menu-type=full] ._md-focused.md-button:not([disabled]):hover, prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item.md-focused:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item:not([disabled]):focus, prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item:not([disabled]):hover, prm-main-menu[menu-type=full] .hovered.md-button.md-focused:not([disabled]), prm-main-menu[menu-type=full] .hovered.md-button:not([disabled]):focus, prm-main-menu[menu-type=full] .hovered.md-button:not([disabled]):hover, prm-main-menu[menu-type=full] .hovered.overlay-menu-item.md-focused:not([disabled]), prm-main-menu[menu-type=full] .hovered.overlay-menu-item:not([disabled]):focus, prm-main-menu[menu-type=full] .hovered.overlay-menu-item:not([disabled]):hover, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>._md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.hovered.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button:hover:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .md-focused.md-button:not([disabled]), prm-main-menu[menu-type=full] .md-focused.overlay-menu-item:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>._md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.hovered.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item:hover:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] md-card._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] md-card._md-focused:not([disabled]):hover, prm-main-menu[menu-type=full] md-card.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] md-card.hovered:not([disabled]):hover, prm-main-menu[menu-type=full] md-card.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] md-card.md-focused:not([disabled]):hover, prm-main-menu[menu-type=full] md-card:focus:not([disabled]), prm-main-menu[menu-type=full] md-card:hover:not([disabled]), prm-topbar ._md-focused.md-button:not([disabled]), prm-topbar .hovered.md-button:not([disabled]), prm-topbar .md-button:focus:not([disabled]), prm-topbar .md-button:hover:not([disabled]), prm-topbar .md-focused.md-button:not([disabled]), prm-user-area ._md-focused.md-button.user-menu-button:not([disabled]), prm-user-area .hovered.md-button.user-menu-button:not([disabled]), prm-user-area .md-button.user-menu-button:focus:not([disabled]), prm-user-area .md-button.user-menu-button:hover:not([disabled]), prm-user-area .md-focused.md-button.user-menu-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item ._md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .hovered.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container._md-focused:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container.hovered:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container.md-focused:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item ._md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .hovered.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container._md-focused:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.hovered:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-focused:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:hover:not([disabled]){background-color:transparent;}
+prm-search-bookmark-filter #favorites-button{background-color:transparent;}
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span{box-shadow:none;}
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar{background-color:#d6d6d6;}
+md-toolbar.md-primoExplore-theme{background-color:#d6d6d6 !important;}
+prm-user-area .user-menu-button.md-button {color:#005873; background-color:#d6d6d6;}
+prm-user-area .user-menu-button.md-button:hover {color:#5F710F !important; background-color:#d6d6d6 !important;}
+
+
+/* clear for advanced search - use dark colors from cancel button on primo 4 */
+.md-button.button-notice {color:#404040;}
+.md-button.button-notice:hover {color:#5A5A5A;}
+
+/* search box section */
+.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar{background-color:#d6d6d6;}
+prm-journals-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {color:#005873;}
+prm-journals-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover, prm-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover {color:#5F710F; background-color:transparent;}
+prm-journals-search-bar .search-switch-buttons .md-button.switch-to-simple, prm-search-bar .search-switch-buttons .md-button.switch-to-simple {color:#005873;}
+prm-journals-search-bar .search-switch-buttons .md-button.switch-to-simple:hover, prm-search-bar .search-switch-buttons .md-button.switch-to-simple:hover {color:#5F710F; background-color:transparent;}
+
+
+/* sign-in modal - gray stripe background - white background for header/footer */
+/* gray stripe background */
+.prm-primary-bg.prm-hue2, md-backdrop.md-opaque, prm-journals-search-bar.prm-hue2, prm-search-bar.prm-hue2, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after {background: #666666 url(http://content.library.pdx.edu/static/css/images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;}
+md-dialog.light-on-dark-dialog {color:#404040; background-color: #FFF;}
+md-dialog-content  md-list {background-color:#FFF;}
+
+/* sign-in mobile */
+.light-on-dark-dialog .md-button {color: #005873;}
+.md-icon-button.close-button {color:#005873 !important;}
+.custom-links-container.layout-wrap.layout-align-sm-start-start.layout-align-center-start.layout-row {display:none;}
+/* login popup */
+prm-login-item {max-width:100%;}
+md-list-item.md-2-line .md-list-item-text h3, md-list-item.md-2-line>._md-no-style .md-list-item-text h3, md-list-item.md-3-line .md-list-item-text h3, md-list-item.md-3-line>._md-no-style .md-list-item-text h3 {line-height:1.6em;}
+md-dialog.md-content-overflow .md-actions, md-dialog.md-content-overflow md-dialog-actions {border:0;}
+prm-login  .md-button {color:#005873;}
+
+/* my account */
+.md-button.button-link, .tiles-grid-tile .tile-content>.md-button, md-grid-tile .tile-content>.md-button  {color:#005873;}
+.md-button.button-link:hover, .tiles-grid-tile .tile-content>.md-button:hover, md-grid-tile .tile-content>.md-button:hover  {color:#5F710F !important;}
+prm-personal-info .button-link {color:#005873;}
+prm-personal-info .button-link:hover  {color:#5F710F;}
+/* discard link */
+prm-personal-info .md-button.button-warn {color:#404040;}
+prm-personal-info .md-button.button-warn:hover {color:#5A5A5A !important;}
+/* hide block and messages */
+
+
+/* bx recommender */
+prm-recomendation-item .weak-text {display:none;}
+.recommendations-title {color: #005873;}
+.recommendations-title:hover,.recommendations-title:focus  {color:#5F710F !important;}
+.md-button.arrow-link-button .button-content:focus {color:#5F710F !important;}
+.md-button.arrow-link-button .button-content:hover {color:#5F710F !important;}
+.md-button.arrow-link-button .hover.button-content {color:#5F710F !important;}
+.md-button.arrow-link-button:focus .button-content {color:#5F710F !important;}
+.md-button.arrow-link-button:hover .button-content {color:#5F710F !important;}
+.prm-links-hover.prm-hue-1 {color:#5F710F !important;}
+.recommendations-title.hover>span>span{color:#5F710F !important;}
+.recommendations-title:hover>span>span{color:#5F710F !important;}
+prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span{color:#5F710F !important;}
+prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span {color:#5F710F !important;}
+prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span {color:#5F710F !important;}
+
+/* change blue arrows to gray */
+prm-icon[icon-definition="chevron-right"] {color:#404040 !important;}
+
+
+/* back links */
+.md-button.back-button {color: #005873 !important;}
+
+/* remove endnote action */
+li.md-nav-item[name="EndNote"] {display:none;}
+
+
+/* patron name link */
+.prm-primary-bg.prm-hue3-important, prm-browse-search-bar.prm-hue3-important, prm-journals-search-bar.prm-hue3-important, prm-search-bar.prm-hue3-important, prm-spinner.prm-hue3-important.overlay-cover.light-on-dark:after, prm-tags-search-bar.prm-hue3-important, prm-user-area md-fab-toolbar.md-is-open md-fab-trigger ._md-fab-toolbar-background, prm-user-area md-fab-toolbar.md-is-open md-fab-trigger .md-fab-toolbar-background {background-color:#d6d6d6 !important;}
+prm-user-area .user-menu-button .user-name:hover {color:#5F710F !important;}
+
+/* browse search */
+
+/* search bar */
+prm-browse-search-bar {padding-top:0;}
+.classic-input .search-scope {background-color:#FFF !important; border-color:#d6d6d6;}
+md-select[aria-label="Browse by"] span {height:17px;}
+
+/* make text after subject heading not italic and bold */
+prm-browse-result span.text-italic.text-in-brackets {
+	font-style: normal;
+    font-weight: normal;
+}
+
+/* sidebar */
+
+
+/* alma login */
+.light-on-dark-dialog.login-dialog md-input-container label:not(.md-no-float):not(._md-container-ignore) {color:#474334;}
+prm-login .md-button.md-icon-button.icon-button-large {left:0;}
+.light-on-dark-dialog .md-button.button-confirm {color:#005873;}
+prm-login .animate-enter-leave-scale-bounce {left:0;}
+md-dialog.light-on-dark-dialog md-input-container .md-input, md-dialog.light-on-dark-dialog md-input-container input {border-bottom: 2px solid #005873; color:#474334 !important;}
+prm-login h2 {margin:0;}
+
+/* saved records/searches */
+prm-favorites-tool-bar md-toolbar button.md-button {color:#005873;}
+prm-favorites-tool-bar #ReportError {display:none;}
+prm-favorites-edit-labels-menu .labels-menu-button, prm-favorites-edit-labels-menu .labels-menu-button:hover {opacity:1; background-color:transparent;}
+
+/* highlight */
+mark {background:#FFFFCC;}
+.text-highlight, mark {box-shadow: none;}
+
+/* related reading */
+.section-description {display:none;}
+
+/* remove tags */
+[aria-label="Tags"]{display:none;}
+#tags{display:none;}
+
+
+/* guest sign-in */
+.bar.alert-bar {background-color:#FFFFCC !important; border:none;}
+
+/* main menu */
+prm-main-menu[menu-type=menu] .md-button {font-size:16px; font-weight:normal !important;}
+
+/* virtual browse */
+#virtualBrowse {display:block !important;}
+
+/* remove account links */
+prm-library-card-menu {display:none;}
+
+/* hide no results suggestions */
+prm-no-search-result md-card-content ul {display:none;}
+
+
+/* orange location links */
+[class*=check_]>span:first-of-type {color:inherit !important;}
+.best-location-sub-location {color:inherit !important;}
+.best-location-delivery {color:inherit !important;}
+
+
+/* direct sign-in page */
+.login-dialog md-list md-list-item .md-list-item-text .list-item-title, .login-dialog md-list md-list-item .md-list-item-text h3 {color:#005873;}
+.login-card {padding:30px;}
+
+/* hide location label on full view of record */
+prm-full-view-service-container prm-search-result-availability-line div.layout-row {display:none;}
+
+/* hide summit libraries above hide/show button */
+span[translate="nui.brief.results.tabs.getit_other"] {display:none;}
+
+/* summit libraries list */
+prm-alma-more-inst md-list-item {padding:0 15px;}
+
+/* color contrast */
+
+/* default link color override over wordpress styles */
+a,a:visited {color: #005873;}
+a:hover {color: #5F710F;}
+
+/* show/hide summit libraries */
+.hide_show_other_institutions_button {
+	font-family: "Lato",Helvetica,sans-serif !important;
+    cursor: pointer !important;
+    padding: 3px 10px !important;
+    background-color: #FFF !important;
+    border: 1px solid #005873 !important;
+    border-radius: 5px !important;
+    color: #005873 !important;
+    margin-left: 12px !important;
+    margin-bottom: 6px !important;
+    font-size: 12.8px !important;
+    display: inline-block !important;
+}
+
+.hide_show_other_institutions_button:hover {
+	border: 1px solid #5F710F !important;
+    color: #5F710F !important;
+}
+
+/* sign-in buttons */
+prm-authentication button.md-button[aria-label="Sign in"] {
+	background-color:#005873;
+	color:#FFF !important;
+	padding:.6em .35em .3em .35em !important;
+}
+prm-authentication button.md-button[aria-label="Sign in"]:hover {
+	background-color:#5F710F !important;
+	color:#FFF !important;
+}
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button:hover:not([disabled]) {
+	color:#FFF !important;
+}
+
+prm-authentication span[translate="getit.signin_link.sign_in"] {
+	padding:.6em .35em .3em .35em !important;
+}
+
+
+/* bookplates */
+.bookplate-container {}
+.bookplate {background-image: url(http://content.library.pdx.edu/static/primo_theme/css/images/liblogo-tiny.png?ver=20170317);
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    padding: 8px 8px 8px 90px !important;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #5F710F;
+    margin: 8px 0;
+    max-width: 600px;
+    outline: none;
+	background-color:#FFF;
+}
+.bookplate:hover {background-color:#FFF;}
+prm-brief-result .item-detail span {display:block;}
+
+/* signin-button */
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button[aria-label="Sign in"],
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button[aria-label="Sign in"]:hover:not([disabled]),
+prm-topbar .md-button[aria-label="Sign in"]:hover:not([disabled]),
+prm-authentication button.md-button[aria-label="Sign in"]
+ {
+    background-color: #005873;
+    color: #FFF !important;
+    padding: .6em .35em .3em .35em !important;
+}
+
+prm-facet .text-italic.text-in-brackets {font-style:normal;}
+
+
+/* august 2017 release */
+
+/* multiple facets */
+md-checkbox.md-checked ._md-icon,.multiselect-facet-group .md-chip.facet-excluded md-checkbox.md-checked ._md-icon {background:#005873;}
+.multiselect-submit .multiselect-submit-inner .md-button {background-color:#404040; color:#FFF;}
+.multiselect-submit .multiselect-submit-inner .md-button:hover,.multiselect-submit .multiselect-submit-inner .md-button:focus {background-color:#5A5A5A; color:#FFF !important;}
+.multiselect-submit .multiselect-submit-inner .md-button.md-primary {background-color:#005873; color:#FFF;}
+.multiselect-submit .multiselect-submit-inner .md-button.md-primary:hover,.multiselect-submit .multiselect-submit-inner .md-button.md-primary:focus {background-color:#5F710F; color:#FFF !important;}
+
+
+/* responsive adjustments */
+
+@media (max-width: 767px) {
+	
+	#masthead {margin-top:-1px;}
+	
+	#psulib_header_logo {height:40px !important;}
+	
+	.main {webkit-flex: 0 0 100% !important; flex: 0 0 100% !important;}
+	
+	/* action icons for mobile */
+	md-nav-bar.wrapped-items ul {
+
+	}
+	.__sm .saved-query-list>md-nav-bar.wrapped-items .md-nav-item, .__sm prm-action-list>md-nav-bar.wrapped-items .md-nav-item, .__xs .saved-query-list>md-nav-bar.wrapped-items .md-nav-item, .__xs prm-action-list>md-nav-bar.wrapped-items .md-nav-item {
+		min-width:none !important;
+		width:120px !important;
+	}
+	.saved-query-list>md-nav-bar .md-nav-item, prm-action-list>md-nav-bar .md-nav-item {max-width:none !important;}
+	
+	/* citation */
+	.send-actions-content-item .layout-row {-webkit-flex-wrap: wrap; flex-wrap: wrap;}
+	div[data-tab-pane="cite"] {flex:initial; -ms-flex:initial; }
+	/* hide copy to clipboard */
+	.send-actions-content-item .layout-row span[translate="nui.citation.button"] {display:none;}
+	
+	#psulib_header_logo {height:40px !important;}
+	
+	.main {webkit-flex: 0 0 100% !important; flex: 0 0 100% !important;}
+	
+	/* action icons for mobile */
+	md-nav-bar.wrapped-items ul {}
+	.__sm .saved-query-list>md-nav-bar.wrapped-items .md-nav-item, .__sm prm-action-list>md-nav-bar.wrapped-items .md-nav-item, .__xs .saved-query-list>md-nav-bar.wrapped-items .md-nav-item, .__xs prm-action-list>md-nav-bar.wrapped-items .md-nav-item {
+		min-width:none !important;
+		width:120px !important;
+	}
+	.saved-query-list>md-nav-bar .md-nav-item, prm-action-list>md-nav-bar .md-nav-item {max-width:none !important;}
+	
+	/* citation */
+	.send-actions-content-item .layout-row {-webkit-flex-wrap: wrap; flex-wrap: wrap;}
+	div[data-tab-pane="cite"] {flex:initial; -ms-flex:initial; }
+	/* hide copy to clipboard */
+	.send-actions-content-item .layout-row span[translate="nui.citation.button"] {display:none;}
+}
+
+@media (max-width: 500px) {
+	
+	/* mobile refine my results */
+	md-toolbar.bottom-fixed-toolbar button.md-button {color: #005873;}
+
+	/* mobile action icons */
+	#scrollActionList {flex-wrap:wrap;}
+	._md-nav-bar-list .container-nav-controls {display:none;}
+	.saved-query-list.visible .md-nav-item, prm-action-list.visible .md-nav-item {width:130px;}
+}
+
+@media (max-width: 959px) {
+	md-toolbar button.md-button {color:#005873 !important;}
+	md-toolbar button.md-button:hover {color:#5F710F !important;}
+	#more-links-button {display:none;}
+	#facets {z-index:50 !important;}
+}
+
+/* make the sidebar facets section wider */
+@media (max-width: 1919px) and (min-width: 960px) {
+	.flex-md-25, .layout-md-row>.flex-md-25, .layout-row>.flex-md-25 {min-width:320px;}
+	.sidebar-inner-wrapper {max-width:100%;}
+}
+
+
+/* facet checkboxes always visible */
+.multiselect-facet-group.multiselect-inactive .md-chip md-checkbox {transform: scaleX(1);}
+
+/* facet exclude always visible */
+.available-facets .section-content .md-chips .md-chip .button-exclude {color: #D2492A; z-index: 1; opacity: 1; transform: translateZ(0); transition: transform .3s cubic-bezier(.23,1,.32,1),opacity .2s ease,z-index 0s 0s; visibility: visible; top: 0 !important;}
+.available-facets .section-content .md-chips .md-chip .button-exclude:before {background-color:transparent; border-color:transparent;}
+
+/* browse fix */
+.top-nav-bar-links a {box-shadow: none !important;}
+
+/* wrap overflow text in facets */
+prm-facet-exact .section-content .md-chips .md-chip .md-chip-content {
+  overflow: visible;
+  margin-bottom: 0.5em; 
+  width: 100%;
+}
+prm-facet-exact .section-content .md-chips .md-chip .facet-title {
+	line-height:1.25em;
+}
+prm-facet-exact .md-chips .md-chip {
+  line-height: normal;
+  height: auto; 
+}
+prm-facet-exact .md-chips .md-chip .md-chip-content strong {
+  white-space: normal; 
+  overflow: visible; 
+}
+prm-facet-exact .section-content .md-chips .md-chip .md-chip-remove-container {
+  height: 28px; 
+  align-items: center;
+  align-self: center;
+  top: -5px;
+}
+prm-facet-exact .section-content .md-chips .md-chip strong+span {
+  margin-left: auto;
+  align-self: center;
+}
+prm-facet .sidebar-inner-wrapper {
+  margin-right: 0;
+}
+prm-facet-exact .md-chips .md-chip .md-chip-content md-checkbox ._md-container {top:8px;}
+prm-facet-exact .section-content .md-chips .md-chip strong+span {align-self: start; margin-top:-1px;}
+prm-facet-exact .section-content .md-chips .md-chip .md-chip-remove-container {align-self: start; margin-top:-1px;}
+/* /wrap overflow text in facets */
+
+/* print styles */
+@media print {
+	.sidebar {display:none;}
+	prm-page-nav-menu {display:none;}
+	.bottom-fixed-toolbar {display:none;}
+	#fixed-buttons-holder {display:none;}
+	prm-search-bar {display:none;}
+	.header.topbar-wrapper {display:none;}
+	.flex-order-4.flex-lg-15.flex-xl-25.flex-xl-10.flex-md-0.flex-lg-5.flex-0 {display:none;}
+	.button-confirm[translate="nui.brief.results.loadMore"] {display:none;}
+	.list-spacer {display:none;}
+	.md-subheader {display:none;}
+}
+
+/* fix for November 2017 Release availability link colors for "and other locations" */
+prm-search-result-availability-line span[translate="delivery.and.other.locations"] {display: none;}
+.md-button[title="Find & Request"]:hover [class*=does_not_exist] {color:#5F710F !important;}
+
+/******************************/
+/* new psu library theme 2018 */
+/******************************/
+
+/* primo homepage */
+md-card.default-card {box-shadow:none;}
+
+/* button adjustments */
+button, input[type='button'], input[type='submit'] {box-shadow:none !important;}
+button:active, input[type='button']:active, input[type='submit']:active {transform:none !important;}
+
+/** UberMenu Custom Menu Styles (Customizer) **/
+/* main */
+ .ubermenu.ubermenu-main { background:none; border:none; box-shadow:none; }
+ .ubermenu.ubermenu-main .ubermenu-item-level-0 > .ubermenu-target { border:none; box-shadow:none; background:#ffffff; }
+ .ubermenu.ubermenu-main.ubermenu-horizontal .ubermenu-submenu-drop.ubermenu-submenu-align-left_edge_bar, .ubermenu.ubermenu-main.ubermenu-horizontal .ubermenu-submenu-drop.ubermenu-submenu-align-full_width { left:0; }
+ .ubermenu.ubermenu-main.ubermenu-horizontal .ubermenu-item-level-0.ubermenu-active > .ubermenu-submenu-drop, .ubermenu.ubermenu-main.ubermenu-horizontal:not(.ubermenu-transition-shift) .ubermenu-item-level-0 > .ubermenu-submenu-drop { margin-top:0; }
+ .ubermenu-main .ubermenu-item-level-0 > .ubermenu-target { font-size:18px; text-transform:none; color:#080808; }
+ .ubermenu-main .ubermenu-nav .ubermenu-item.ubermenu-item-level-0 > .ubermenu-target { font-weight:normal; }
+ .ubermenu.ubermenu-main .ubermenu-item-level-0:hover > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-active > .ubermenu-target { color:#080808; }
+ .ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-item > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-parent > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0.ubermenu-current-menu-ancestor > .ubermenu-target { color:#080808; }
+ .ubermenu-main .ubermenu-item.ubermenu-item-level-0 > .ubermenu-highlight { color:#080808; }
+ .ubermenu-main .ubermenu-item-level-0 > .ubermenu-target, .ubermenu-main .ubermenu-item-level-0 > .ubermenu-custom-content.ubermenu-custom-content-padded { padding-top:32px; padding-bottom:32px; }
+ .ubermenu-main .ubermenu-submenu.ubermenu-submenu-drop { background-color:#ffffff; border:1px solid #979797; }
+ .ubermenu-main .ubermenu-item-level-0 > .ubermenu-submenu-drop { box-shadow:none; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header > .ubermenu-target, .ubermenu-main .ubermenu-tab > .ubermenu-target { font-size:18px; text-transform:none; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header > .ubermenu-target { color:#080808; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header > .ubermenu-target:hover { color:#080808; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header.ubermenu-current-menu-item > .ubermenu-target { color:#080808; }
+ .ubermenu-main .ubermenu-nav .ubermenu-submenu .ubermenu-item-header > .ubermenu-target { font-weight:normal; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-item-header.ubermenu-has-submenu-stack > .ubermenu-target { border-bottom:1px solid #f2f2f2; }
+ .ubermenu-main .ubermenu-item-normal > .ubermenu-target { color:#080808; font-size:16px; font-weight:normal; text-transform:none; }
+ .ubermenu.ubermenu-main .ubermenu-item-normal > .ubermenu-target:hover, .ubermenu.ubermenu-main .ubermenu-item-normal.ubermenu-active > .ubermenu-target { color:#080808; }
+ .ubermenu-main .ubermenu-item-normal.ubermenu-current-menu-item > .ubermenu-target { color:#080808; }
+ .ubermenu-main .ubermenu-item-normal > .ubermenu-target:hover > .ubermenu-target-text { text-decoration:underline; }
+ .ubermenu-main .ubermenu-submenu .ubermenu-divider > hr { border-top-color:#dd9933; }
+
+/* 114 */    .ubermenu .ubermenu-item.ubermenu-item-114.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-114 > .ubermenu-target:hover, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-114.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-114 > .ubermenu-target:hover { background:#650360; }
+             .ubermenu .ubermenu-item.ubermenu-item-114.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-114:hover > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-114.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-114:hover > .ubermenu-target { background:#650360; color:#ffffff; }
+/* 476 */    .ubermenu .ubermenu-item.ubermenu-item-476.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-476 > .ubermenu-target:hover, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-476.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-476 > .ubermenu-target:hover { background:#5F710F; }
+             .ubermenu .ubermenu-item.ubermenu-item-476.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-476:hover > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-476.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-476:hover > .ubermenu-target { background:#5F710F; color:#ffffff; }
+/* 475 */    .ubermenu .ubermenu-item.ubermenu-item-475.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-475 > .ubermenu-target:hover, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-475.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-475 > .ubermenu-target:hover { background:#00759a; }
+             .ubermenu .ubermenu-item.ubermenu-item-475.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-475:hover > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-475.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-475:hover > .ubermenu-target { background:#00759a; color:#ffffff; }
+/* 111 */    .ubermenu .ubermenu-item.ubermenu-item-111.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-111 > .ubermenu-target:hover, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-111.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-111 > .ubermenu-target:hover { background:#60351d; }
+             .ubermenu .ubermenu-item.ubermenu-item-111.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-item.ubermenu-item-111:hover > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-111.ubermenu-active > .ubermenu-target, .ubermenu .ubermenu-submenu .ubermenu-item.ubermenu-item-111:hover > .ubermenu-target { background:#60351d; color:#ffffff; }
+
+			 
+/* color adjustments */
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar {background-color:#F5F5F5 !important;}
+.prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar {background-color:#F5F5F5 !important;}
+.section-title prm-icon,.section-title prm-icon:hover {color:#3a3a3a !important;}
+md-content, md-content.md-primoExplore-theme,.full-view-inner-container {background-color:#F5F5F5;}
+prm-search-bookmark-filter .md-button {background-color:#F5F5F5 !important;}
+prm-topbar .md-button {background-color:#F5F5F5;}
+prm-topbar .md-button:focus, prm-topbar .md-button:hover {background-color:#F5F5F5;}
+prm-facet prm-icon md-icon.md-primoExplore-theme {color:#474334 !important;}
+prm-facet button.md-chip-remove {padding: 0 6px !important; background:#FFF !important;}
+prm-facet button.md-chip-remove:hover {padding: 0 6px !important; background:#FFF !important;}
+prm-facet .md-chip-remove-container button:hover md-icon {color:tomato !important;}
+prm-facet .md-button.md-primary._md-focused:not([disabled]), .md-button.md-primary.hovered:not([disabled]), .md-button.md-primary.md-focused:not([disabled]), .md-button.md-primary:focus:not([disabled]), .md-button.md-primary:hover:not([disabled]) {background:#F5F5F5;}
+prm-browse-search-bar {background-color:#F5F5F5;}
+prm-user-area .user-menu-button.md-button {background-color:#F5F5F5;}
+
+/***********************/
+/* August 2018 Release */
+/***********************/
+/* prm-user-area-expandable  {display:none !important;} */
+prm-user-area  {display:block !important;}
+/* Kim W. requested similar articles should show on record detail page (9/17/2018) */
+/* full-view-aside,.full-view-aside,prm-recomendations,.full-view-spacer {display:none;} */
+prm-favorites [role="tabpanel"] {position:absolute;}
+
+/* ask us tab link */
+add-chat {position: fixed; right: 0; top: 40%; z-index: 99999;}
+add-chat a.psulib-primary-button {padding: 11px 15px; border-top-right-radius: 0; border-bottom-right-radius: 0;}
+@media (max-width: 767px) {
+	add-chat {position: fixed; right: 0; top:auto; bottom:30px; z-index: 99999;}
+}
+
+/* hide top-level facet for psu online resources */
+[data-facet-value="tlevel-online_resources"] {display:none !important;}
+
+/********************/
+/* May 2020 Release */
+/********************/
+prm-user-area-expandable {
+    display: block !important;
+}
+md-menu-item.my-library-card-ctm {display: none;}
+md-menu-item.my-loans-ctm {display: none;}
+md-menu-item.my-requests-ctm {display: none;}

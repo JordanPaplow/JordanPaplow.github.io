@@ -40,12 +40,13 @@ nav ul {
   justify-content: space-evenly;
   min-width: 50px;
   width: 70%;
+  min-width: 600px;
 }
 
 nav li a:hover {
   padding-bottom: 1px;
   border-bottom: 4px solid rgb(84, 116, 97);
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 #banner {
@@ -53,7 +54,7 @@ nav li a:hover {
   background-image:url(../images/Columbia\ Gorge.jpg);
   background-size: cover;
   height: 250px;
-  background-position: 0 20%;
+  background-position: 0 35%;
   background-repeat: no-repeat;
 
 }
@@ -65,7 +66,7 @@ nav li a:hover {
     background-repeat: no-repeat;
   }
   #banner-chinook {
-    background-image:url(../images/banner-chinook\ copy.jpg);
+    background-image:url(../images/banner-chinook.jpg);
     background-size: cover;
     height: 250px;
     background-position: 0 70%;
@@ -89,7 +90,7 @@ nav li a:hover {
     background-image:url(../images/banner-steelhead.jpg);
     background-size: cover;
     height: 250px;
-    background-position: 0 60%;
+    background-position: 0 70%;
     background-repeat: no-repeat;
   }
   #banner-chum {
@@ -117,39 +118,84 @@ nav li a:hover {
 }
 
 .grid-2 .left-col {
-  flex:.25;
+  flex:1;
   padding-right: 20px;
   text-align: right;
 }
 
 .grid-2 .right-col {
-  flex:.75;
+  flex:3;
   padding-left: 20px;
   padding-top: 80px;
+  
+}
+.grid-2 .right-col-v2 {
+  flex:3;
+  padding-left: 20px;
+  padding-top: 40px;
+
 }
 
 h1 {
   font-family: 'Vollkorn', serif;
-  font-size: 50px;
+  font-size: 40px;
+  padding-top:20px;
   margin-bottom: 0;
 
 }
 
-#intro-header{
+#intro-header {
   padding-bottom: 15px;
+
 }
 
 h2 {
 font-style: italic;
 font-size: 15px;
+
 }
 
 #fish-v1 {
-  Width: 350px;
+  Width: 20vw;
+  min-width: 200px;
   padding-top: 30px;
 }
 
 #fish-v2 {
-  Width: 200px;
+  Width: 15vw;
+  min-width: 150px;
   padding-top: 30px;
+}
+
+#pink{
+  color:#996A99;
+}
+
+#chinook{
+  color: #4D4117;
+}
+
+#sockeye{
+  color:#820B0B
+}
+
+#coho{
+  color:#661027
+}
+
+#steelhead{
+  color:#506570
+}
+
+#chum{
+  color:#456332
+}
+
+@media (max-width: 768px ){
+
+
+  #intro-header{
+    line-height: 1em;
+  }
+
 }

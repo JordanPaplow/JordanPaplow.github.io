@@ -17,13 +17,35 @@
       <a href="form.html">Form</a></nav></div>
     <main>
 
-        <form action="https://getsimpleform.com/messages?form_api_token=66917f327f7e0c66ff8791e13df01920" method="post">
-            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-            <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
-            <!-- all your input fields here.... -->
-            <input type='text' name='test' />
-            <input type='submit' value='Test form' />
-          </form>
+      <form action="index.html" method="get">
+
+        <label for="fname">What you yourself:</label><br/>
+          <input type="text" id="fname" name="fname" required="required" >
+        <br/>
+        <label for="lname">What others call you:</label><br/>
+          <input type="text" id="lname" name="lname" required="required" >
+        <br/>
+        <p>How is this form building going?</p>
+          <textarea name="Comments" cols="20" rows="4"> Sucking my will to live. </textarea>   
+        <p>How are you feeling today?</p>
+          <input type="radio" name="The feels" value= "Shitty"/> Shitty
+          <input type="radio" name="the feels" value= "Super Shitty"/> Super Shitty
+          <input type="radio" name="the feels" value= "Super Duper Shitty"/> Super Duper Shitty
+        <br/>
+        <p>What are you going to do about your sad state?</p>
+        <select name="actions">
+         <option value="maybe">Exercise</option>
+         <option value="probably">Drink</option>
+         <option value="definitely">Wallow</option>
+         </select>
+         <br/><br/>
+         <label for="username">Date you would like to fast-forward to:</label><br/>
+         <br/>
+                   <input type="date" name="fantasy" />
+         <br/><br/>
+        <input type="submit" value= "submit">
+      
+      </form>
 
     </main>
     <footer></footer>

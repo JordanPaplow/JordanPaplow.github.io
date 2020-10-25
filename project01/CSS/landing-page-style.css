@@ -31,11 +31,13 @@ img{
 
 .center {
     opacity: .5;
+    transition-duration: 1s;
+    
 
 }
 
-.center:hover {
-    
+.center:hover { 
     opacity: 1;
-    transition-duration: 1s;
+    transition-duration: 2s;
+
 }
