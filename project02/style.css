@@ -155,8 +155,7 @@ iframe {
   
   .menu-wrap .toggler {
     position: absolute;
-    top: 0;
-    left: 0;
+    margin:auto;
     z-index: 2;
     cursor: pointer;
     width: 50px;
@@ -293,6 +292,11 @@ iframe {
       z-index: 1;
       padding-left: 1rem;
     }
+
+    .menu-wrap .toggler {
+      position: absolute;
+      top: 0;
+      left: 0;
 
     h1 {
       font-size: 40pt;
