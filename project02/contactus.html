@@ -34,24 +34,47 @@
         </div>
 
 
-<section id="banner-img-contact"></section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/ac.jpg" class="slideshowimg">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/aa.jpg" class="slideshowimg">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/ab.jpg" class="slideshowimg">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          
+    
+        </div>
 
 <div id="container">
     <div id= "by-phone">
-        <h2>REACH US BY PHONE</h2>
-            <img src="images/phone-icon.svg" alt="Phone icon"/>
+        <h2 class="h2b">REACH US BY PHONE</h2>
+            <a href="tel:5032879848"><img src="images/phone-icon.svg" alt="Phone icon"/></a>
+            
             <p>(503) 287-9848</p>
        
     </div>
     <div id= "by-email">
-        <h2>REACH US BY EMAIL</h2>
-        <a href="antiquealleypdx@gmail.com" target="blank">
+        <h2 class="h2b">REACH US BY EMAIL</h2>
+        <a href="mailto:antiquealleypdx@gmail.com">
             <img src="images/mail-icon.svg" alt="Phone icon"/></a>
         
         
     </div>
     <div id= "follow-us">
-        <h2>FOLLOW US</h2>
+        <h2 class="h2b">FOLLOW US</h2>
             <div id="sm-icons" class= "white">
             <div>
                 <a href="https://www.instagram.com/antiquealley/" target="_blank">
@@ -65,13 +88,44 @@
                 <a href="https://twitter.com/antiquealleypdx?lang=en" target="_blank">
                 <img src="images/twtr-icon-white.svg" alt="Twitter Logo" /></a>
             </div>
-        </div>
+    </div>
 
         
     </div>
 
 
 </div>
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
 
 </body>
 </html>
