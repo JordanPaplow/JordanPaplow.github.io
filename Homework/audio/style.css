@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+
+.buttlord {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    animation: butt 1s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+#poke-me {
+
+    padding-top: 75px;
+    font-size: 15pt;
+}
+p{
+    color: chartreuse;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 20pt;
+    text-align: center;
+}
+
+#fartbutt{
+    color:yellow;
+    font-size: 40pt;
+    margin: 0;
+}
+
+.booty { transition: all .2s ease-in-out; }
+.booty:hover { transform: scale(1.1); }
+
+@keyframes butt {
+
+    from{
+    transform: translateY(0%)
+    }
+
+    to{
+    transform: translateY(10%)
+    }
+
+}
