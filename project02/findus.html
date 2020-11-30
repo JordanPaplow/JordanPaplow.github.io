@@ -37,26 +37,52 @@
                 </div>
         </div>
 
-    <div class="slideshow-container">
+        <div class="slideshow-container">
 
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="images/ab.jpg" class="slideshowimg">
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="images/aa.jpg" class="slideshowimg">
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="images/ac.jpg" class="slideshowimg">
-        </div>
-      
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 8</div>
+              <img src="images/ac.jpg" class="slideshowimg">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 8</div>
+              <img src="images/ac.jpg" class="slideshowimg">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 8</div>
+              <img src="images/aa.jpg" class="slideshowimg">
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="images/SlideShow-04.jpg" class="slideshowimg">
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <img src="images/SlideShow-05.jpg" class="slideshowimg">
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 8</div>
+                <img src="images/SlideShow-06.jpg" class="slideshowimg">
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <img src="images/SlideShow-07.jpg" class="slideshowimg">
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <img src="images/SlideShow-08.jpg" class="slideshowimg">
+            </div>
+           
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
       
 
     </div>
@@ -118,11 +144,7 @@ if (n < 1) {slideIndex = slides.length}
 for (i = 0; i < slides.length; i++) {
   slides[i].style.display = "none";
 }
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
 slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
 }
 </script>
 

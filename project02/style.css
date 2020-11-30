@@ -125,7 +125,7 @@ text-align: center;
       padding: 16px;
       color: white;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 30px;
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
       user-select: none;
@@ -175,6 +175,7 @@ text-align: center;
   flex-direction: column;
   text-align: center;
 
+
 }
 
 #container img {
@@ -185,7 +186,8 @@ width:50px;
   background-color: black;
   color: white;
   text-align: center;
-  height:400px;
+  min-height:400px;
+  height: fit-content;
   padding:50px;
   line-height: 2em;
 }
@@ -193,8 +195,8 @@ width:50px;
 #hours {
   background-color:#FFF8EB;
   text-align: center;
-  height:400px;
-  
+  min-height:400px;
+  height: fit-content;
   padding:100px 50px 50px 50px;
   line-height: 2em;
   
@@ -204,7 +206,8 @@ width:50px;
   background-color: black;
   text-align: center;
   color: white;
-  height:400px;
+  min-height:400px;
+  height: fit-content;
   padding: 100px 50px 50px 50px;
   line-height: 2em;
 }
@@ -221,17 +224,20 @@ width:50px;
 #by-phone {
   background-color: black;
   color: white;
-  height:300px;
+  min-height:300px;
+  height: fit-content;
 }
 
 #by-phone p {
   
-  padding-top: 20px;
+  padding-top: 30px;
   
 }
 
+
 #by-email {
-  height:300px;
+  min-height:300px;
+  height: fit-content;
 }
 
 #by-email img{
@@ -241,7 +247,8 @@ width:50px;
 #follow-us {
   background-color: black;
   color: white;
-  height:300px;
+  min-height:300px;
+  height: fit-content;
 }
 
 
@@ -406,11 +413,17 @@ iframe {
   transition: opacity 0.4s ease;
 }
 
+.menu-wrap .menu > div > div > ul{
+ padding: 0px;
+}
+
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: white;
   font-size: 1.5rem;
   padding: 1rem;
+
+  
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
@@ -454,7 +467,10 @@ iframe {
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
+  
   }
+
+
 
   #footer {
     display:none;
@@ -491,19 +507,28 @@ iframe {
   #by-phone {
     background-color: black;
     color: white;
-    height:300px;
+    min-height:400px;
+    height: fit-content;
     flex:1;
   }
 
+  #by-phone img {
+  
+    padding-top: 30px;
+    
+  }
+
   #by-email {
-    height:300px;
+    min-height:400px;
+    height: fit-content;
     flex:1;
   }
   
   #follow-us {
     background-color: black;
     color: white;
-    height:300px;
+    min-height:400px;
+    height: fit-content;
     flex:1;
   }
   
