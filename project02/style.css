@@ -237,6 +237,7 @@ width:50px;
 
 
 #by-email {
+  background-color:#FFF8EB;
   min-height:300px;
   height: fit-content;
 }
@@ -520,6 +521,7 @@ iframe {
   }
 
   #by-email {
+    background-color:#FFF8EB;
     min-height:400px;
     height: fit-content;
     flex:1;
