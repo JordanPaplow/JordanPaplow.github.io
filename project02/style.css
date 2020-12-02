@@ -1,4 +1,4 @@
-/* Do you actually go through and read all our code? Seems like that would be a pain in the ass, but come to think of it I am not sure how else you would be able to properly grade these things... */
+/*  See you in 342! */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap');
 
@@ -7,8 +7,8 @@
 body {
   margin:0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
   background-color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
