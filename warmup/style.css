@@ -10,10 +10,6 @@ body{
 
 }
 
-body, html {
-  cursor: url(images/bluemultiglit.gif), pointer;
-}
-
 h1{
   font-family: 'Do Hyeon', sans-serif;
   color: #ace5e6;
