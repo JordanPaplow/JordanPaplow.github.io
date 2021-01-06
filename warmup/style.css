@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+  background-image: url(images/spacejpg.jpg);
+  background-size:cover;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+  font-family: 'Do Hyeon', sans-serif;
+  color: #ace5e6;
+  text-align:center;
+  letter-spacing: 5px;
+  margin:40px;
+}
+
+#risseverse{
+  width:100vw;
+  animation: risse 4s ease-in-out infinite alternate;
+  transform-origin: top;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#spacetext{
+  color: white;
+  display:flex;
+  width:60vw;
+  padding-top:50px;
+  margin:auto;
+}
+
+.textbox{
+  line-height: 1.5em;
+  text-align: justify;
+  padding:20px;
+  flex:1;
+}
+
+@keyframes risse {
+
+    from{
+    transform: translateY(0%)
+    }
+
+    to{
+    transform: translateY(3%)
+    }
+
+}
+
+#toggle {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 5em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 30px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #f8982b;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav {
+  position: fixed;
+  padding-top: 150px;
+  width: 100%;
+  height: 100%;
+  background-color:black;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+nav {
+  text-align: center;
+  margin:auto;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #6ecddd;
+  font-size: 2em;
+  display: inline-block;
+  margin-top: 1.25em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:hover:before {
+  height: 100%;
+}
+
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+
+h1{
+  font-size: 30pt;
+    text-shadow: 3px 2px 2px rgb(251, 147, 12), 0px -1px 3px rgba(12, 79, 251,.5),-3px 0px 2px #0ccbfb;
+animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
+ 
+}
+
+small{
+  display:block;
+  text-transform:initial;
+  font-size:24px;
+  
+}
+
+@keyframes gradientMove { 
+  0%{background-size: 100% 4px}
+  50%{background-size: 100% 2px}
+  100%{background-size: 100% 4px}
+}
+
+@keyframes pulse { 
+    0%{ opacity:.9;transform: skewX(.5deg);}
+    25%{ opacity:1;}
+    50%{opacity:.9;}
+    75%{ opacity:1; transform:skewX(.5deg);}
+    100%{opacity:.9;}
+}
+@keyframes chromaticMove { 
+    0%{text-shadow: 3px 2px 2px rgba(251, 147,12), 0px -1px 3px rgba(12, 79, 251,.5),0px 0px -2px rgba(52, 251, 12, 1);}
+    50%{text-shadow: 3px 2px 2px rgba(251, 147,12), 0px -1px 3px rgba(12, 79, 251,.5),-3px 2px 3px rgba(52, 251, 12, 1);}
+    100%{text-shadow: 3px 2px 2px rgba(251, 147,12), 0px -1px 3px rgba(12, 79, 251,.5),2px -1px 2px rgba(52, 251, 12, 1);}
+}
+
+.footer {
+  color: rgba(251, 147,12); 
+  font-size:10pt;
+  width: 100%;
+  padding-top:30px;
+  text-align: center;
+}
+
+@media (max-width: 768px ){
+
+  body{
+    font-size: small;
+  }
+
+  #spacetext{
+    
+    flex-direction:column;
+    text-align: center;
+    padding:0;
+    
+  }
+
+  .textbox{
+    padding:15px;
+    line-height: 2em;
+  }
+  
+  .hamburger {
+    position: absolute;
+    top: 4.5em;
+    right: 5%;
+    margin-left: -1em;
+    margin-top: -45px;
+    width: 2em;
+    height: 10px;
+    z-index: 5;
+  }
+
+  nav {
+    text-align: center;
+    margin:auto;
+    margin-top: 150px;
+    font-size: smaller;
+  }
+ 
+  .hamburger div {
+    position: relative;
+    width: 2em;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #f8982b;
+    margin-top: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+}
