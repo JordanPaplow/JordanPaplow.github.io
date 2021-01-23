@@ -83,3 +83,35 @@ nav {
   flex-grow: 2;
 
 }
+
+  @media only screen and (max-width: 768px) {
+
+    body{
+      line-height: 1.5em;
+    }
+
+  .three-col {
+    display:block;
+    text-align: center;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  ul{
+    padding-right:40px;
+  
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    text-align: center;
+  }
+
+
+    
+  }
