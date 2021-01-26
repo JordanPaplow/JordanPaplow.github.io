@@ -28,7 +28,7 @@ a{
 
 h1{
     font-family: 'Odibee Sans', sans-serif;
-    margin-top:20vh;
+    margin-top:15vh;
     text-align: center;
     letter-spacing:.05em;
     line-height: 1.25em;
@@ -75,8 +75,8 @@ h1{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 5%;
-  padding-top: 20vh;
+  height:25vh;
+  padding-top: 15vh;
   opacity:0;
   transition: all 2s ease-in;
 }
