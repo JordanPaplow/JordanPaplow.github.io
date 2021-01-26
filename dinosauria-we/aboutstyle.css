@@ -25,11 +25,8 @@ a{
     color: #efeae6;
 }
    
-
 h1{
     font-family: 'Odibee Sans', sans-serif;
-    margin-top:20vh;
-    text-align: center;
     letter-spacing:.05em;
     line-height: 1.25em;
 }
@@ -39,7 +36,15 @@ h1{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 5vw;
+    margin-left:15vw;
+    margin-right:15vw;
+    font-size: smaller;
+    line-height: 1.5em;
+    letter-spacing: .05em;
+}
+
+.container div{
+    padding-right:20px;
 }
 
 /* Hamboigah Navvy! */

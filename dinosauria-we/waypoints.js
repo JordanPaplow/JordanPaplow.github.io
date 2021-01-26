@@ -72,7 +72,7 @@ var $textfade8 = $('.textfade8');
 
 $textfade8.waypoint(function(direction) {
     if (direction == 'down') {
-        $textfade2.addClass('js-textfade-animate');
+        $textfade8.addClass('js-textfade-animate');
     } else {
     $textfade8.removeClass('js-textfade-animate');
     }
@@ -192,7 +192,7 @@ $imgfade7.waypoint(function(direction) {
 }, { offset:'50%'});
 
 
-var $imgfade8 = $('.imgfade88');
+var $imgfade8 = $('.imgfade8');
 
 $imgfade8.waypoint(function(direction) {
     if (direction == 'down') {
