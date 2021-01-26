@@ -11,6 +11,11 @@ a{
     color:#efeae6;
 }
 
+img{
+    height:40vh;
+    width:auto;
+}
+
 #cover{
     background-image:url(images/cover3.jpg);
     background-position:bottom right;
