@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animation trigger</title>
+  </head>
+  <body id="pane">
+    <section class="start">
+      <img class="protagonist" src="simmons.jpg" />
+    </section>
+    <main>
+      <div class="wrapper">
+        <section class="slide one">
+          <article class="vh-center">
+            <p class="center">It was just another day of Sweatin' to the Oldies for lil Richard Simmons.</p>
+          </article>
+        </section>
+        <section class="slide two">
+          <article class="vh-center">
+            <p class="center">When suddenly he started feeling a bit dizzy...</p>
+          </article>
+        </section>
+        <section class="slide three">
+          <article class="vh-center">
+            <p class="center">...He even turned green! And started to hallucinate!</p>
+          </article>
+        </section>
+        <section class="slide four">
+          <article class="vh-center">
+            <p class="center">As his conciousness drifted the cosmos, he relalized that he'd<br>
+               not been getting the right nutrition.<br> He knew what he had to do...</p>
+          </article>
+        </section>
+        <section class="slide five">
+          <article class="vh-center">
+            <p class="center">He ate a salad and melted into the divinity <br>
+            of fresh nutritious vegetables.</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script>
+      var $two = $(".two")
+
+      $two.waypoint(
+        function (direction) {
+          $(".protagonist").addClass("flip")
+        },
+        { offset: "25%", horizontal: true }
+      )
+      var $three = $(".three")
+
+      $(".three").waypoint(
+        function () {
+          $(".protagonist").css("filter", "hue-rotate(90deg)")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
+      var $four = $(".four")
+
+      $(".four").waypoint(
+        function () {
+          $(".protagonist").addClass("shrink")
+        },
+        { offset: "75%", horizontal: true }
+      )
+
+      var $five = $(".five")
+
+      $(".five").waypoint(
+        function () {
+          $(".protagonist").addClass("hide")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
+    </script>
+  </body>
+</html>
