@@ -89,10 +89,20 @@ main {
 }
 .five {
   background: #27492f;
+}
+.fivealt {
+  background: #27492f;
   background-image: url(simmonsveg.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  transition: all 3s ease-in;
 }
 .center {
   text-align: center;
+}
+
+.centeralt {
+  text-align: center;
+  text-shadow: #0d065c;
+  font-size: 2em;
 }
