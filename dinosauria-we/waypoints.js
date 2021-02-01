@@ -3,6 +3,7 @@ var $textfade = $('.textfade');
 $textfade.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade.addClass('js-textfade-animate');
+        document.getElementById('audio1').play();
     } else {
     $textfade.removeClass('js-textfade-animate');
     }
@@ -13,6 +14,7 @@ var $textfade2 = $('.textfade2');
 $textfade2.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade2.addClass('js-textfade-animate');
+        document.getElementById('audio2').play();
     } else {
     $textfade2.removeClass('js-textfade-animate');
     }

@@ -2,6 +2,9 @@
 
 body{
     background-color:#161615 ;
+    background-image:url(images/background-scenes.jpg);
+    background-position: center;
+    background-size: auto;
     color:#efeae6;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -11,27 +14,13 @@ a{
     color:#efeae6;
 }
 
-#cover{
-    background-image:url(images/cover3.jpg);
-    background-position:bottom right;
-    height: 100vh;
-    min-width: 100vw;
-    overflow:hidden;  
-}
-
-#title{
-    font-size: 5em;
-    letter-spacing: .05em;
-    color: #efeae6;
-}
-   
-
 h1{
     font-family: 'Odibee Sans', sans-serif;
-    margin-top:15vh;
+    margin-top:30vh;
     text-align: center;
     letter-spacing:.05em;
     line-height: 1.25em;
+    
 }
 
 #spacer{
@@ -53,6 +42,7 @@ h1{
 {
     opacity:0;
     transition: all 3s ease-in;
+    
 
 }
 
@@ -76,9 +66,10 @@ h1{
   margin-left: auto;
   margin-right: auto;
   height:25vh;
-  padding-top: 15vh;
+  padding-top: 30vh;
   opacity:0;
   transition: all 2s ease-in;
+  
 }
 
 .js-imgfade-animate{
@@ -123,6 +114,7 @@ h1{
     transition: all 0.3s ease-in-out;
     transform: scale(0);
     font-family: 'Odibee Sans', sans-serif;
+    z-index: 2;
   }
   
   .nav-wrapper {
@@ -143,7 +135,7 @@ h1{
     color: #4c4536;
     font-size: 2em;
     display: inline-block;
-    margin-top: 1em;
+    margin-top: .75em;
     transition: color 0.2s ease-in-out;
     letter-spacing: .1em;
   }
