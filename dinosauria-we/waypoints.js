@@ -25,6 +25,7 @@ var $textfade3 = $('.textfade3');
 $textfade3.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade3.addClass('js-textfade-animate');
+        document.getElementById('audio3').play();
     } else {
     $textfade3.removeClass('js-textfade-animate');
     }
@@ -35,6 +36,7 @@ var $textfade4 = $('.textfade4');
 $textfade4.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade4.addClass('js-textfade-animate');
+        document.getElementById('audio4').play();
     } else {
     $textfade4.removeClass('js-textfade-animate');
     }
@@ -45,6 +47,7 @@ var $textfade5 = $('.textfade5');
 $textfade5.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade5.addClass('js-textfade-animate');
+        document.getElementById('audio5').play();
     } else {
     $textfade5.removeClass('js-textfade-animate');
     }
@@ -55,6 +58,7 @@ var $textfade6 = $('.textfade6');
 $textfade6.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade6.addClass('js-textfade-animate');
+        document.getElementById('audio6').play();
     } else {
     $textfade6.removeClass('js-textfade-animate');
     }
@@ -65,6 +69,7 @@ var $textfade7 = $('.textfade7');
 $textfade7.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade7.addClass('js-textfade-animate');
+        document.getElementById('audio7').play();
     } else {
     $textfade7.removeClass('js-textfade-animate');
     }
@@ -75,6 +80,7 @@ var $textfade8 = $('.textfade8');
 $textfade8.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade8.addClass('js-textfade-animate');
+        document.getElementById('audio8').play();
     } else {
     $textfade8.removeClass('js-textfade-animate');
     }
@@ -85,6 +91,7 @@ var $textfade9 = $('.textfade9');
 $textfade9.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade9.addClass('js-textfade-animate');
+        document.getElementById('audio9').play();
     } else {
     $textfade9.removeClass('js-textfade-animate');
     }
@@ -95,6 +102,7 @@ var $textfade10 = $('.textfade10');
 $textfade10.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade10.addClass('js-textfade-animate');
+        document.getElementById('audio10').play();
     } else {
     $textfade10.removeClass('js-textfade-animate');
     }
@@ -105,6 +113,7 @@ var $textfade11 = $('.textfade11');
 $textfade11.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade11.addClass('js-textfade-animate');
+        document.getElementById('audio11').play();
     } else {
     $textfade11.removeClass('js-textfade-animate');
     }
@@ -115,8 +124,20 @@ var $textfade12 = $('.textfade12');
 $textfade12.waypoint(function(direction) {
     if (direction == 'down') {
         $textfade12.addClass('js-textfade-animate');
+        document.getElementById('audio12').play();
     } else {
     $textfade12.removeClass('js-textfade-animate');
+    }
+}, { offset:'70%'});
+
+var $textfade13 = $('.textfade13');
+
+$textfade13.waypoint(function(direction) {
+    if (direction == 'down') {
+        $textfade13.addClass('js-textfade-animate');
+        document.getElementById('audio13').play();
+    } else {
+    $textfade13.removeClass('js-textfade-animate');
     }
 }, { offset:'70%'});
 
