@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinosauria, We: Scene 5</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
+
+  <audio autoplay loop >
+    <source src="audio/Backgroundmusic.mp3" type="audio/mp3">
+  </audio>
+
 <!-- Hamburger Nav -->
   <input id="toggle" type="checkbox"></input>
 
@@ -35,50 +41,62 @@
 
 <div id= "spacer"></div>
 
-    <h1 class = "textfade">the sun will not be seen and it will always be night</h1>
+  <h1 class = "textfade">the sun will not be seen and it will always be night</h1>
 
-    <img  class = "imgfade" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade" data-enllax-ratio="-.07" src="images/scene5-1.jpg">
 
-    <h1 class = "textfade2">trees will die<br>all vegetation will die</h1>
+  <h1 class = "textfade2">trees will die<br>all vegetation will die</h1>
 
-    <img  class = "imgfade2" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade2" data-enllax-ratio="-.05" src="images/scene5-2.jpg">
 
-    <h1 class = "textfade3">radiated me will eat the flesh of radiated men</h1>
+  <h1 class = "textfade3">radiated men will eat the flesh of radiated men</h1>
 
-    <img  class = "imgfade3" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade3" data-enllax-ratio="-.07" src="images/scene5-3.jpg">
 
-    <h1 class = "textfade4">the sea will be poisoned<br>the lakes and rivers will vanish<br>rain will be the new gold</h1>
+  <h1 class = "textfade4">the sea will be poisoned<br>the lakes and rivers will vanish<br>rain will be the new gold</h1>
 
-    <img  class = "imgfade4" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade4" data-enllax-ratio="-.05" src="images/scene5-4.jpg">
 
-    <h1 class = "textfade5">the rotting bodies of men and animals will stink in the dark wind</h1>
+  <h1 class = "textfade5">the rotting bodies of men and animals will stink in the dark wind</h1>
 
-    <img  class = "imgfade5" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade5" data-enllax-ratio="-.07" src="images/scene5-5.jpg">
 
-    <h1 class = "textfade6">the last few survivors will be overtaken by new and hideous diseases</h1>
+  <h1 class = "textfade6">the last few survivors will be overtaken by new and hideous diseases</h1>
 
-    <img  class = "imgfade6" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade6" data-enllax-ratio="-.05" src="images/scene5-6.jpg">
 
-    <h1 class = "textfade7">and the space platforms will be destroyed by attrition<br>the petering out of supplies<br>the natural effect of general decay</h1>
+  <h1 class = "textfade7">and the space platforms will be destroyed by attrition<br>the petering out of supplies<br>the natural effect of general decay</h1>
 
-    <img  class = "imgfade7" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade7" data-enllax-ratio="-.07" src="images/scene5-7.jpg">
 
-    <a href="page6.html">
-      <div class="box-1">
-          <div class="btn btn-one">
-              <span> CONTINUE </span>
-          </div>
+  <a href="page6.html">
+    <div class="box-1">
+        <div class="btn btn-one">
+            <span> CONTINUE </span>
         </div>
-      </a>
+    </div>
+  </a>
 
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous">
-    </script>
+  <audio src="audio/s5-the-sun-will-not-be-seen-and-it-will-always-be-night.mp3" id="audio1" style="display:none;"></audio>
+  <audio src="audio/s5-trees-will-die-all-vegetation-will-die.mp3" id="audio2" style="display:none;"></audio>
+  <audio src="audio/s5-radiated-men-will-eat-the-flesh-of-radiated-men.mp3" id="audio3" style="display:none;"></audio>
+  <audio src="audio/s5-the-sea-will-be-poisoned-the-lakes-and-rivers-will-vanish.mp3" id="audio4" style="display:none;"></audio>
+  <audio src="audio/s5-the-rotting-bodies-of-men-and-animals-will-stink-in-the-dark-wind.mp3" id="audio5" style="display:none;"></audio>
+  <audio src="audio/s5-the-last-few-survivors-will-be-overtaken-by-new-and-hideous-diseases.mp3" id="audio6" style="display:none;"></audio>
+  <audio src="audio/s5-and-the-space-platforms-will-be-destroyed-by-attrition.mp3" id="audio7" style="display:none;"></audio>
 
-    <script src="jquery.waypoints.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous">
+  </script>
 
-    <script src="waypoints.js"></script>
+  <script src="script/jquery.waypoints.min.js"></script>
+  <script src="script/waypoints.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script/jquery.smoothscroll.min.js"></script>
+  <script src="script/jquery.enllax.min.js"></script>
+  <script src="script/scripts.js"></script>
+
 </body>
 </html>

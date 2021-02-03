@@ -15,7 +15,7 @@ a{
 }
 
 #cover{
-    background-image:url(images/cover3.jpg);
+    background-image:url(../images/cover3.jpg);
     background-position:bottom right;
     height: 100vh;
     min-width: 100vw;
@@ -33,6 +33,20 @@ h1{
     font-family: 'Odibee Sans', sans-serif;
     margin-top:33vh;
     text-align: center;
+}
+
+h1{
+  font-size: 30pt;
+    text-shadow: 3px 2px 2px #161615, 0px -1px 3px #161615,;
+animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
+}
+
+@keyframes pulse { 
+    0%{ opacity:.9;transform: skewX(.5deg);}
+    25%{ opacity:1;}
+    50%{opacity:.9;}
+    75%{ opacity:1; transform:skewX(.5deg);}
+    100%{opacity:.9;}
 }
 
 .box-1 {
@@ -147,6 +161,33 @@ h1{
   text-transform:uppercase;
   margin-bottom:30px;
   color:#d6d6d4;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  #cover{
+    background-image:url(../images/cover3.jpg);
+    background-position: center;
+    height: 100%;
+    min-width: auto;
+    overflow:hidden; 
+  } 
+    
+  #title{
+    font-size: 4em;
+    letter-spacing: .05em;
+    color: #efeae6;
+}
+
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 150px;
+	cursor: pointer;
+}
+     
 }
 
 

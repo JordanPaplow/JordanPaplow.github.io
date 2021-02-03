@@ -265,3 +265,13 @@ $imgfade12.waypoint(function(direction) {
     $imgfade12.removeClass('js-imgfade-animate');
     }
 }, { offset:'50%'});
+
+var $imgfade13 = $('.imgfade13');
+
+$imgfade13.waypoint(function(direction) {
+    if (direction == 'down') {
+        $imgfade13.addClass('js-imgfade-animate');
+    } else {
+    $imgfade13.removeClass('js-imgfade-animate');
+    }
+}, { offset:'50%'});

@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinosauria, We: Scene 3</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
+
+  <audio autoplay loop >
+    <source src="audio/Backgroundmusic.mp3" type="audio/mp3">
+  </audio>
+
 <!-- Hamburger Nav -->
   <input id="toggle" type="checkbox"></input>
 
@@ -33,62 +38,75 @@
   </div>
 <!-- Hamburger Nav -->
 
-<div id= "spacer"></div>
+  <div id= "spacer"></div>
 
-    <h1 class = "textfade">the heart is blackened</h1>
+  <h1 class = "textfade">the heart is blackened</h1>
 
-    <img  class = "imgfade" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade" data-enllax-ratio="-.07" src="images/scene3-1.jpg">
 
-    <h1 class = "textfade2">the fingers reach for the throat</h1>
+  <h1 class = "textfade2">the fingers reach for the throat</h1>
 
-    <img  class = "imgfade2" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade2" data-enllax-ratio="-.05" src="images/scene3-2.jpg">
 
-    <h1 class = "textfade3">the gun</h1>
+  <h1 class = "textfade3">the gun</h1>
 
-    <img  class = "imgfade3" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade3" data-enllax-ratio="-.07" src="images/scene3-3.jpg">
 
-    <h1 class = "textfade4">the knife</h1>
+  <h1 class = "textfade4">the knife</h1>
 
-    <img  class = "imgfade4" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade4" data-enllax-ratio="-.05" src="images/scene3-4.jpg">
 
-    <h1 class = "textfade5">the bomb</h1>
+  <h1 class = "textfade5">the bomb</h1>
 
-    <img  class = "imgfade5" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade5" data-enllax-ratio="-.07" src="images/scene3-5.jpg">
 
-    <h1 class = "textfade6">the fingers reach toward an unresponsive god </h1>
+  <h1 class = "textfade6">the fingers reach toward an unresponsive god </h1>
 
-    <img  class = "imgfade6" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade6" data-enllax-ratio="-.05" src="images/scene3-6.jpg">
 
-    <h1 class = "textfade7">the fingers reach for the bottle</h1>
+  <h1 class = "textfade7">the fingers reach for the bottle</h1>
 
-    <img  class = "imgfade7" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade7" data-enllax-ratio="-.07" src="images/scene3-7.jpg">
 
-    <h1 class = "textfade8">the pill</h1>
+  <h1 class = "textfade8">the pill</h1>
 
-    <img  class = "imgfade8" src="http://www.fillmurray.com/200/300">
+  <img  class = "imgfade8" data-enllax-ratio="-.05" src="images/scene3-8.jpg">
 
-    <h1 class = "textfade9">the powder</h1>
+  <h1 class = "textfade9">the powder</h1>
 
-    <img  class = "imgfade9" src="http://www.fillmurray.com/200/300">
-
-
-    <a href="page4.html">
-      <div class="box-1">
-          <div class="btn btn-one">
-              <span> CONTINUE </span>
-          </div>
-        </div>
-      </a>
+  <img  class = "imgfade9" data-enllax-ratio="-.07" src="images/scene3-9.jpg">
 
 
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous">
-    </script>
+  <a href="page4.html">
+  <div class="box-1">
+      <div class="btn btn-one">
+          <span> CONTINUE </span>
+      </div>
+    </div>
+  </a>
 
-    <script src="jquery.waypoints.min.js"></script>
+  <audio src="audio/s3-theheart-is-blackened.mp3" id="audio1" style="display:none;"></audio>
+  <audio src="audio/s3-the-fingers-reach-for-the-throat.mp3" id="audio2" style="display:none;"></audio>
+  <audio src="audio/s3-the-gun.mp3" id="audio3" style="display:none;"></audio>
+  <audio src="audio/s3-the-knife.mp3" id="audio4" style="display:none;"></audio>
+  <audio src="audio/s3-the-bomb.mp3" id="audio5" style="display:none;"></audio>
+  <audio src="audio/s3-the-fingers-reach-toward-an-unresponsive-god.mp3" id="audio6" style="display:none;"></audio>
+  <audio src="audio/s3-the-fingers-reach-for-the-bottle.mp3" id="audio7" style="display:none;"></audio>
+  <audio src="audio/s3-the-pill.mp3" id="audio8" style="display:none;"></audio>
+  <audio src="audio/s3-the-powder.mp3" id="audio9" style="display:none;"></audio>
 
-    <script src="waypoints.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous">
+  </script>
+
+  <script src="script/jquery.waypoints.min.js"></script>
+  <script src="script/waypoints.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script/jquery.smoothscroll.min.js"></script>
+  <script src="script/jquery.enllax.min.js"></script>
+  <script src="script/scripts.js"></script>
+
 </body>
 </html>

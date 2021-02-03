@@ -2,7 +2,7 @@
 
 body{
     background-color:#161615 ;
-    background-image:url(images/background-scenes.jpg);
+    background-image:url(../images/background-scenes.jpg);
     background-position: center;
     background-size: auto;
     color:#efeae6;
@@ -16,7 +16,7 @@ a{
 
 h1{
     font-family: 'Odibee Sans', sans-serif;
-    margin-top:30vh;
+    margin-top:25vh;
     text-align: center;
     letter-spacing:.05em;
     line-height: 1.25em;
@@ -38,7 +38,8 @@ h1{
 .textfade9,
 .textfade10,
 .textfade11,
-.textfade12
+.textfade12,
+.textfade13
 {
     opacity:0;
     transition: all 3s ease-in;
@@ -61,12 +62,13 @@ h1{
 .imgfade9,
 .imgfade10,
 .imgfade11,
-.imgfade12{
+.imgfade12,
+.imgfade13{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height:25vh;
-  padding-top: 30vh;
+  height:35vh;
+  padding-top: 25vh;
   opacity:0;
   transition: all 2s ease-in;
   
@@ -261,3 +263,12 @@ a{
 	transform: scale(0.1, 1);
 }
   
+@media only screen and (max-width: 768px) {
+
+  .hamburger {
+    
+    right:15vw;
+  
+  }
+
+}

@@ -2,7 +2,7 @@
 
 body{
     background-color:#161615 ;
-    background-image:url(images/cover3.jpg);
+    background-image:url(../images/cover3.jpg);
     background-attachment: fixed;
     color:#efeae6;
     font-family: 'Nunito Sans', sans-serif;
@@ -165,3 +165,38 @@ nav a:hover:before {
 
 /* Hamboigah Navvy! */
 
+@media only screen and (max-width: 768px) {
+
+  .abouts{
+    display: flex;
+    flex-direction: column;
+    padding-left:20px;
+  
+}
+.container{
+  padding-right:0;
+  margin-left:5vw;
+  margin-right:5vw;
+}
+
+.aboutwords{
+  padding-top:100px;
+  text-align:center;
+  font-size:.95em;
+}
+
+img{
+  height:auto;
+  width:40vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:20px;
+}
+
+.hamburger {
+  display:inline;
+  right:15vw;
+
+}
+
+}
