@@ -22,14 +22,6 @@ a:hover {
     transition-duration: .5s;
 }
 
-#paplow{
-    text-align: center;
-    font-size:6em;
-    margin-top: 0;
-    margin-bottom: 0;
-    color:ghostwhite;
-    
-}
 
 #tv{
     display:block;
@@ -57,3 +49,62 @@ nav{
 
 }
 
+#aboutme{
+    margin:0 auto;
+    padding-top: 30px;
+    text-align: justify;
+    width:40vw;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #tv{
+        display:block;
+        margin:none;
+        margin-top:10vh;
+        height:auto;
+        width:100vw;
+        
+        
+    }
+    
+    #vid{
+        position:absolute;
+        top:16vh;
+        left:15vw;
+        height:20vh;
+        width:auto;
+        z-index: -1;
+    }
+    
+    nav{
+
+        margin-top: 20px;
+        text-align: center;
+    
+    }
+    #flexnav{
+        display:flex;
+        flex-direction: column;
+        font-size: x-large;
+        
+        
+    }
+#flexnav a{
+    padding-top: 15px;
+    color: ghostwhite;
+}
+
+#home a{
+    color: darkslategray;
+}
+
+#aboutme{
+    margin:0 auto;
+    padding-top: 30px;
+    width:65vw;
+    padding-bottom:40px;
+    
+}
+
+}
