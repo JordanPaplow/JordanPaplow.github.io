@@ -1,0 +1,48 @@
+body{
+    background-color: #4ad1dd;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding-left: .5vw;
+    padding-right: .5vw;
+}
+
+a:hover {
+    color:darkblue;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+    transition-duration: .5s;
+}
+
+
+#tv{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25vh;
+    height:45vh;
+    width:auto;
+    
+    
+}
+
+#vid{
+    position:absolute;
+    top:30vh;
+    left:35vw;
+    height:29vh;
+    width:auto;
+    z-index: -1;
+}
+
+nav{
+    text-align: center;
+
+}
+
