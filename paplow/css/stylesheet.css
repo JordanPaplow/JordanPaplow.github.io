@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
+
 body{
     background-color: #4ad1dd;
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Catamaran', sans-serif;
 }
 
 a{
@@ -20,13 +22,21 @@ a:hover {
     transition-duration: .5s;
 }
 
+#paplow{
+    text-align: center;
+    font-size:6em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:ghostwhite;
+    
+}
 
 #tv{
     display:block;
     margin-left:auto;
     margin-right:auto;
-    margin-top:25vh;
-    height:45vh;
+    margin-top:10vh;
+    height:60vh;
     width:auto;
     
     
@@ -34,14 +44,15 @@ a:hover {
 
 #vid{
     position:absolute;
-    top:30vh;
-    left:35vw;
-    height:29vh;
+    top:16vh;
+    left:30vw;
+    height:40vh;
     width:auto;
     z-index: -1;
 }
 
 nav{
+    margin-top: 0;
     text-align: center;
 
 }
