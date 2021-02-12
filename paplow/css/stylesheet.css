@@ -9,8 +9,8 @@ body{
 a{
     text-decoration: none;
     color: black;
-    padding-left: .5vw;
-    padding-right: .5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 a:hover {
@@ -54,6 +54,12 @@ nav{
     padding-top: 30px;
     text-align: justify;
     width:40vw;
+    padding-bottom:30px;
+}
+
+#flexnav{
+    padding-top: 30px;
+    font-size: large;
 }
 
 @media only screen and (max-width: 768px) {
