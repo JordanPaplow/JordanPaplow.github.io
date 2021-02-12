@@ -3,7 +3,7 @@
 body{
     background-color: #4ad1dd;
     color: black;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Catamaran', helvetica, sans-serif;
 }
 
 a{
@@ -65,6 +65,9 @@ nav{
 #music{
     display: none;
 }
+
+
+
 
 @media only screen and (max-width: 768px) {
 
