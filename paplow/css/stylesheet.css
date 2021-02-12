@@ -13,6 +13,17 @@ a{
     padding-right: 2vw;
 }
 
+h1{
+    font-size: 14em;
+    color:white;
+    text-align: center;
+
+}
+h1:hover{
+    transition: 1s ease-in;
+    color: rgb(49, 149, 196);
+}
+
 a:hover {
     color:darkblue;
     padding-bottom: 2px;
@@ -63,7 +74,7 @@ nav{
 }
 
 #music{
-    text-align: center;
+    display:none;
 }
 
 
