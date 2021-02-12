@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
+
+body{
+    background-color: #4ad1dd;
+    color: black;
+    font-family: 'Catamaran', helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+h1{
+    font-size: 14em;
+    color:white;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+h1:hover{
+    transition: 1s ease-in;
+    color: rgb(49, 149, 196);
+}
+
+#enter{
+    height:100vh;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    h1{
+        font-size: 4em;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }   
+
+}
