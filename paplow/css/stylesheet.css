@@ -62,6 +62,10 @@ nav{
     font-size: 1.5em;
 }
 
+#music{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
     #tv{
