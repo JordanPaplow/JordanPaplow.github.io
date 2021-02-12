@@ -59,7 +59,7 @@ nav{
 
 #flexnav{
     padding-top: 30px;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 @media only screen and (max-width: 768px) {
